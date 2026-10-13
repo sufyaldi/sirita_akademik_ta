@@ -48,7 +48,7 @@
                             <field name="compiled_prompt" placeholder="Masukkan atau sesuaikan prompt lengkap di sini..." widget="text"/>
                         </page>
                         <page string="Respons AI">
-                            <field name="ai_response" placeholder="Jawaban dari model LLM akan muncul di sini..." widget="text" readonly="1"/>
+                            <field name="ai_response" readonly="1"/>
                         </page>
                         <page string="Refleksi Kritis Mahasiswa">
                             <field name="student_reflection" placeholder="Tuliskan catatan evaluasi kritis Anda terhadap saran AI di atas (mengapa diterima/ditolak/dimodifikasi)..." widget="text"/>

@@ -70,3 +70,4 @@ venv.bak/
 *~
 *.sublime-project
 *.sublime-workspace
+temp/

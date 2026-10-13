@@ -38,9 +38,9 @@ class ThesisPromptExecution(models.Model):
         required=True,
         help='Prompt final yang dikirim ke sirita_ai_core termasuk parameter dan batasan etik'
     )
-    ai_response = fields.Text(
+    ai_response = fields.Html(
         string='Respons GenAI',
-        help='Hasil pemrosesan model LLM'
+        help='Hasil pemrosesan model LLM (terformat kaya HTML)'
     )
     student_reflection = fields.Text(
         string='Refleksi Kritis Mahasiswa',
@@ -57,6 +57,34 @@ class ThesisPromptExecution(models.Model):
     def _compute_name(self):
         for rec in self:
             rec.name = f"[{rec.prompt_id.code or 'PROMPT'}] {rec.prompt_id.name or 'Sesi AI'}"
+
+    @api.model
+    def _markdown_to_html(self, text):
+        """Konversi teks respons Markdown dari LLM menjadi Rich HTML yang rapi"""
+        if not text:
+            return ""
+        if text.strip().startswith('<p>') or text.strip().startswith('<div>'):
+            return text
+        try:
+            import markdown2
+            return markdown2.markdown(
+                text,
+                extras=['fenced-code-blocks', 'tables', 'break-on-newline', 'cuddled-lists']
+            )
+        except Exception:
+            try:
+                import markdown
+                return markdown.markdown(text, extensions=['extra', 'nl2br', 'sane_lists'])
+            except Exception:
+                import re
+                html = text
+                html = re.sub(r'^### (.*?)$', r'<h3>\1</h3>', html, flags=re.MULTILINE)
+                html = re.sub(r'^## (.*?)$', r'<h2>\1</h2>', html, flags=re.MULTILINE)
+                html = re.sub(r'^# (.*?)$', r'<h1>\1</h1>', html, flags=re.MULTILINE)
+                html = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', html)
+                html = re.sub(r'\*(.*?)\*', r'<em>\1</em>', html)
+                html = html.replace('\n', '<br/>')
+                return html
 
     def action_execute_ai(self):
         """Memanggil sirita_ai_core untuk memproses prompt akademik"""
@@ -77,9 +105,10 @@ class ThesisPromptExecution(models.Model):
             response_format='text',
             temperature=0.3
         )
+        html_response = self._markdown_to_html(response)
 
         self.write({
-            'ai_response': response,
+            'ai_response': html_response,
             'state': 'executed'
         })
         return True
