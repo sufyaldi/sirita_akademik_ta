@@ -101,6 +101,7 @@
                                     <field name="create_date" string="Waktu"/>
                                     <field name="prompt_code"/>
                                     <field name="name"/>
+                                    <field name="is_cross_degree" string="Kesesuaian Jenjang" widget="badge" decoration-warning="is_cross_degree" decoration-success="not is_cross_degree"/>
                                     <field name="state" widget="badge"/>
                                 </list>
                             </field>

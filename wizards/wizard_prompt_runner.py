@@ -24,6 +24,24 @@ class WizardPromptRunner(models.TransientModel):
     prompt_code = fields.Char(related='prompt_id.code', string='Kode Prompt')
     appendix_source = fields.Selection(related='prompt_id.appendix_source', string='Tahapan Sumber')
     target_degree = fields.Selection(related='prompt_id.target_degree', string='Jenjang Target')
+    project_degree = fields.Selection(
+        related='project_id.degree_level',
+        string='Jenjang Proyek',
+        readonly=True
+    )
+    filter_by_degree = fields.Boolean(
+        string='Smart Filter (Khusus Jenjang Mahasiswa)',
+        default=True,
+        help='Membatasi pilihan aktivitas prompt hanya untuk jenjang studi mahasiswa saat ini'
+    )
+    is_degree_mismatch = fields.Boolean(
+        string='Apakah Lintas Jenjang',
+        compute='_compute_degree_mismatch'
+    )
+    mismatch_warning = fields.Text(
+        string='Pesan Peringatan Jenjang',
+        compute='_compute_degree_mismatch'
+    )
 
     # Parameter Slot Inputs (Slot-filling form)
     topic = fields.Char(
@@ -57,6 +75,58 @@ class WizardPromptRunner(models.TransientModel):
         string='Pratinjau Prompt Terkompilasi',
         readonly=True
     )
+
+    @api.model
+    def default_get(self, fields_list):
+        res = super().default_get(fields_list)
+        project_id = res.get('project_id') or self.env.context.get('default_project_id')
+        if project_id:
+            project = self.env['thesis.project'].browse(project_id)
+            if not res.get('topic') and project.research_topic:
+                res['topic'] = project.research_topic
+            if not res.get('theoretical_angle') and project.theoretical_framework:
+                res['theoretical_angle'] = project.theoretical_framework
+            if not res.get('method_preference') and project.methodology_summary:
+                res['method_preference'] = project.methodology_summary
+        return res
+
+    @api.depends('project_id.degree_level', 'prompt_id.target_degree')
+    def _compute_degree_mismatch(self):
+        for rec in self:
+            if not rec.project_id or not rec.prompt_id or rec.prompt_id.target_degree == 'all':
+                rec.is_degree_mismatch = False
+                rec.mismatch_warning = ""
+            elif rec.project_id.degree_level == 's1' and rec.prompt_id.target_degree == 's2_s3':
+                rec.is_degree_mismatch = True
+                rec.mismatch_warning = (
+                    f"⚠️ PERINGATAN PEDAGOGIS: Aktivitas [{rec.prompt_id.code}] dirancang khusus untuk jenjang "
+                    f"Magister / Pascasarjana (S2/S3). Mahasiswa peneliti terdaftar pada jenjang Sarjana (S1). "
+                    f"Tuntutan kontribusi teoretis, sintesis mutakhir, dan kebaruan pada prompt ini "
+                    f"berada di atas standar skripsi S1. Disarankan memilih kode A.4.1.1 (Sarjana S1) "
+                    f"atau memastikan telah disetujui Dosen Pembimbing."
+                )
+            elif rec.project_id.degree_level in ['s2', 's3'] and rec.prompt_id.target_degree == 's1':
+                rec.is_degree_mismatch = True
+                rec.mismatch_warning = (
+                    f"ℹ️ CATATAN METODOLOGI: Aktivitas [{rec.prompt_id.code}] adalah standar Sarjana (S1). "
+                    f"Untuk jenjang Pascasarjana ({rec.project_id.degree_level.upper()}), disarankan "
+                    f"menggunakan aktivitas berorientasi kontribusi teoretis tingkat lanjut."
+                )
+            else:
+                rec.is_degree_mismatch = False
+                rec.mismatch_warning = ""
+
+    @api.onchange('project_id', 'filter_by_degree')
+    def _onchange_project_id_filter(self):
+        domain = []
+        if self.project_id and self.filter_by_degree:
+            if self.project_id.degree_level == 's1':
+                domain = [('target_degree', 'in', ['s1', 'all'])]
+            else:
+                domain = [('target_degree', 'in', ['s2_s3', 'all'])]
+            if self.prompt_id and self.prompt_id.target_degree not in (['s1', 'all'] if self.project_id.degree_level == 's1' else ['s2_s3', 'all']):
+                self.prompt_id = False
+        return {'domain': {'prompt_id': domain}}
 
     @api.onchange('project_id')
     def _onchange_project_id(self):

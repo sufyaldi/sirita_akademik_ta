@@ -56,6 +56,25 @@ class ThesisPromptExecution(models.Model):
         ('reviewed', 'Ditinjau Pembimbing'),
     ], string='Status', default='draft', tracking=True)
 
+    is_cross_degree = fields.Boolean(
+        string='Lintas Jenjang',
+        compute='_compute_is_cross_degree',
+        store=True,
+        help='Menandai jika sesi AI menggunakan prompt di luar jenjang studi mahasiswa'
+    )
+
+    @api.depends('project_id.degree_level', 'prompt_id.target_degree')
+    def _compute_is_cross_degree(self):
+        for rec in self:
+            if not rec.project_id or not rec.prompt_id or rec.prompt_id.target_degree == 'all':
+                rec.is_cross_degree = False
+            elif rec.project_id.degree_level == 's1' and rec.prompt_id.target_degree == 's2_s3':
+                rec.is_cross_degree = True
+            elif rec.project_id.degree_level in ['s2', 's3'] and rec.prompt_id.target_degree == 's1':
+                rec.is_cross_degree = True
+            else:
+                rec.is_cross_degree = False
+
     @api.depends('prompt_id', 'create_date')
     def _compute_name(self):
         for rec in self:

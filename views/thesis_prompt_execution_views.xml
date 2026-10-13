@@ -11,6 +11,7 @@
                 <field name="student_id"/>
                 <field name="prompt_code"/>
                 <field name="name"/>
+                <field name="is_cross_degree" string="Kesesuaian Jenjang" widget="badge" decoration-warning="is_cross_degree" decoration-success="not is_cross_degree"/>
                 <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'executed'" decoration-warning="state == 'reviewed'"/>
             </list>
         </field>
@@ -29,6 +30,14 @@
                     <field name="state" widget="statusbar" statusbar_visible="draft,executed,reviewed"/>
                 </header>
                 <sheet>
+                    <field name="is_cross_degree" invisible="1"/>
+                    <div class="alert alert-warning d-flex align-items-center mb-3" role="alert" invisible="not is_cross_degree">
+                        <i class="fa fa-exclamation-triangle me-2 fs-3 text-warning"/>
+                        <div>
+                            <strong>Peringatan Lintas Jenjang Metodologis:</strong>
+                            Sesi ini menggunakan aktivitas prompt di luar jenjang studi normal mahasiswa. Dosen pembimbing disarankan memverifikasi kesesuaian tuntutan riset sebelum menyetujui.
+                        </div>
+                    </div>
                     <div class="oe_title">
                         <span class="o_form_label">Sesi Eksekusi AI</span>
                         <h1>
