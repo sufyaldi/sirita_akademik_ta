@@ -24,6 +24,12 @@ Fitur Utama:
     'author': 'Sufyaldy | UPT TIPD IAIN Parepare',
     'website': 'https://iainpare.ac.id',
     'license': 'LGPL-3',
+    'sequence': 10,
+    'images': [
+        'static/description/icon.png',
+    ],
+    'price': 0.0,
+    'currency': 'USD',
     'depends': [
         'base',
         'mail',
