@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="prompt_a_4_1_1" model="thesis.prompt.library">
+            <field name="code">A.4.1.1</field>
+            <field name="name">Dari Topik ke Pertanyaan Penelitian (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Topik awal atau bidang minat: [masukkan topik] Waktu yang tersedia: [masukkan alokasi waktu] Materi/data yang dipastikan dapat saya akses: [masukkan data atau nyatakan "belum ditentukan"]
+
+Rumuskan 2–3 alternatif pertanyaan penelitian yang layak untuk jenjang Sarjana (S1) berdasarkan topik ini.
+
+Setiap pertanyaan harus spesifik dan terfokus (bukan generik), dapat dijawab tuntas dalam alokasi waktu yang tersedia, berakar pada materi/data yang realistis untuk diperoleh, dan sesuai dengan bobot jenjang Sarjana—deskriptif, komparatif, interpretatif, atau analisis skala terukur.
+
+Untuk setiap pertanyaan, cantumkan: rumusan pertanyaan itu sendiri; fokus kajian utamanya; data, sumber, atau materi apa yang dibutuhkan untuk menjawabnya; satu metode atau pendekatan analitis yang paling cocok; serta keterbatasan atau risiko utamanya.
+
+Kemudian rekomendasikan satu opsi paling realistis dan jelaskan alasan akademik pemilihannya dalam 2–3 kalimat ringkas.]]></field>
+            <field name="constraints"><![CDATA[Jangan memperluas topik melampaui batasan yang telah saya berikan. Jangan mengasumsikan akses data yang belum saya konfirmasi. Jangan membuat pertanyaan umum seperti di buku teks dasar. Posisikan semua usulan sebagai opsi untuk didiskusikan bersama dosen pembimbing, bukan keputusan final.]]></field>
+            <field name="output_target"><![CDATA[Dua atau tiga alternatif rumusan masalah yang berbobot, berbeda secara analitis, dan siap dibawa ke sesi bimbingan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_1_2" model="thesis.prompt.library">
+            <field name="code">A.4.1.2</field>
+            <field name="name">Dari Topik ke Pertanyaan Penelitian, Tujuan, atau Masalah (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Topik atau bidang minat: [masukkan topik] Orientasi teoretis atau konseptual (jika ada): [masukkan orientasi] Waktu yang tersedia: [masukkan alokasi waktu] Materi/data yang dapat saya akses: [masukkan data atau nyatakan "sedang dijajaki"]
+
+Kembangkan topik ini menjadi 2–3 alternatif rumusan pertanyaan penelitian, tujuan riset, atau perumusan masalah yang layak untuk jenjang Magister (S2).
+
+Setiap opsi harus menunjukkan kedalaman analitis yang sesuai dengan jenjang Magister, dapat dijawab dalam alokasi waktu yang tersedia, serta berpijak pada materi atau korpus data yang dapat diakses secara nyata. Opsi dapat mengarah pada kontribusi empiris, konseptual, metodologis, atau teoretis.
+
+Untuk setiap opsi, sajikan: rumusan pertanyaan penelitian atau pernyataan masalah; keterkaitan teoretis atau konseptualnya; materi riset, data, atau korpus yang dibutuhkan; pendekatan metodologis atau analitis yang relevan; serta argumen akademik mengapa topik ini penting diteliti dan apa kontribusi ilmiah yang diharapkan.
+
+Rekomendasikan opsi yang paling menjanjikan secara analitis dan jelaskan alasan pemilihannya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengusulkan desain riset yang tidak realistis untuk jenjang Magister. Jangan mengarang sumber atau mengasumsikan akses materi tanpa konfirmasi saya. Hindari perumusan abstrak yang bisa berlaku untuk topik apa saja. Pastikan teori, data, metode, dan kontribusi ilmiah terlihat selaras di setiap opsi.]]></field>
+            <field name="output_target"><![CDATA[Dua atau tiga rumusan masalah yang berlandaskan teori kuat disertai penjelasan eksplisit mengenai nilai kontribusi dan tuntutan sumber dayanya.]]></field>
+        </record>
+
+        <record id="prompt_a_4_1_3" model="thesis.prompt.library">
+            <field name="code">A.4.1.3</field>
+            <field name="name">Mendiagnosis dan Menyempurnakan Draf Pertanyaan Riset (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf pertanyaan penelitian, tujuan, atau rumusan masalah saya: [masukkan rumusan draf]; Jenjang studi: [Sarjana S1 / Magister S2]; Waktu yang tersedia: [masukkan waktu]; Materi/data yang dapat diakses: [masukkan materi data]
+
+Lakukan diagnosis kritis terhadap draf ini berdasarkan empat kriteria berikut dan laporkan hasil analisis untuk setiap kriteria secara terpisah:
+
+1. Fokus Kajian: Apakah rumusan ini spesifik, ataukah terlalu luas, ambigu, dan generik? Apakah memiliki fokus empiris, konseptual, teoretis, yuridis normatif, interpretatif, atau kritis yang jelas, ataukah fokusnya belum dinyatakan secara eksplisit?
+2. Kelayakan (Feasibility): Apakah ruang lingkupnya realistis dalam batas waktu yang tersedia? Apakah materi riset benar-benar tersedia bagi saya? Apakah metode atau pendekatan analitisnya dapat dikelola pada jenjang studi ini?
+3. Keselarasan (Alignment): Apakah pertanyaan penelitian, materi data, dan metode saling mengunci secara koheren, ataukah untuk menjawabnya dibutuhkan data yang saat ini tidak saya miliki?
+4. Risiko Riset: Identifikasi risiko-risiko utama—akses data, ruang lingkup, etika penelitian, perlindungan data, keandalan sumber, dan kompleksitas metodologis.
+
+Kemudian berikan dua usulan revisi perbaikan:
+
+    - Opsi A (Penyempurnaan Minimal): Mempertahankan gagasan awal saya namun memperjelas fokus dan kelayakannya.
+    - Opsi B (Perumusan Ulang): Memperkuat ketajaman analitis, landasan teoretis, atau orisinalitasnya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah topik penelitian ke arah yang baru. Jangan berasumsi bahwa kelayakan telah terjamin sebelum saya mengonfirmasi akses data. Jangan memvalidasi rumusan yang lemah hanya agar terdengar memuaskan.]]></field>
+            <field name="output_target"><![CDATA[Laporan diagnostik empat dimensi yang lugas disertai dua draf alternatif perbaikan yang siap didiskusikan bersama dosen pembimbing.]]></field>
+        </record>
+
+        <record id="prompt_a_4_1_4" model="thesis.prompt.library">
+            <field name="code">A.4.1.4</field>
+            <field name="name">Merumuskan Hipotesis (Penelitian Kuantitatif dan Eksperimental)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau tujuan riset: [masukkan informasi] Landasan teoretis atau relasi yang dihipotesiskan: [masukkan dasar teoretis] Variabel, kondisi, atau kelompok yang diteliti: [masukkan variabel] Waktu dan sumber daya yang tersedia: [masukkan informasi] Tipe penelitian: [kuantitatif / eksperimental / kuasi-eksperimental / korelasional]
+
+Rumuskan 2–3 hipotesis penelitian yang teruji (testable) dan terjustifikasi secara teoritis untuk menjawab pertanyaan tersebut.
+
+Untuk setiap hipotesis, jelaskan:
+
+    - Rumusan hipotesis kerja (H1) dan hipotesis nihil (H0) secara presisi;
+    - Variabel bebas (independen), variabel terikat (dependen), serta variabel kontrol atau mediator yang relevan;
+    - Arah relasi yang diprediksi (misalnya positif, negatif, non-linier) beserta justifikasi teoretisnya;
+    - Jenis uji statistik atau pendekatan analitis yang paling tepat untuk mengujinya.]]></field>
+            <field name="constraints"><![CDATA[Jangan merumuskan hipotesis yang tidak dapat diukur atau tidak dapat diuji secara empiris. Jangan berasumsi data berdistribusi normal tanpa uji prasyarat. Pastikan hipotesis berpijak pada literatur yang relevan.]]></field>
+            <field name="output_target"><![CDATA[Rumusan hipotesis yang operasional, teruji, dan selaras dengan rancangan analisis kuantitatif.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_1" model="thesis.prompt.library">
+            <field name="code">A.4.2.1</field>
+            <field name="name">Strategi Penelusuran Literatur (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi] Disiplin ilmu: [masukkan bidang ilmu] Bahasa literatur yang dikuasai: [masukkan bahasa] Pangkalan data / alat penelusuran yang tersedia bagi saya: [masukkan pangkalan data seperti Scopus, Google Scholar, PubMed, dll.] Konsep kunci atau literatur awal yang telah diketahui: [masukkan literatur awal]
+
+Rancang strategi penelusuran literatur yang sistematis dan terarah.
+
+Sajikan:
+
+    - Tabel Kata Kunci: Petakan istilah utama, sinonim, variasi ejaan, istilah terkait, dan kata kunci berlawanan untuk setiap konsep inti;
+    - String Penelusuran Boolean: Susun kombinasi operator penelusuran Boolean (AND, OR, NOT/AND NOT) dan pemotongan kata (wildcards) yang siap digunakan pada basis data akademik;
+    - Kriteria Inklusi dan Eksklusi: Tentukan batasan tahun publikasi, jenis dokumen (artikel jurnal berekanan sejawat, buku, prosiding), bahasa, dan konteks kajian;
+    - Urutan Prioritas Penelusuran: Tentukan pangkalan data mana yang harus ditelusuri terlebih dahulu beserta alasannya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengarang judul artikel atau sitasi palsu. Jangan mengasumsikan ketersediaan basis data berbayar jika saya tidak menyatakannya.]]></field>
+            <field name="output_target"><![CDATA[Rencana strategi penelusuran literatur yang dapat direplikasi dan didokumentasikan dalam bab metodologi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_2" model="thesis.prompt.library">
+            <field name="code">A.4.2.2</field>
+            <field name="name">Verifikasi Sumber dan Pemeriksaan Kualitas (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Daftar sumber yang akan diperiksa: [masukkan daftar referensi/tautan] Pertanyaan penelitian atau topik: [masukkan informasi]
+
+Lakukan pemeriksaan kualitas dan verifikasi terhadap setiap sumber pustaka berdasarkan tiga dimensi berikut:
+
+1. Keterlacakan dan Keaslian: Apakah sumber ini nyata, terbit secara sah, dan dapat dilacak? Apakah ada metadata yang hilang atau tidak konsisten—nama penulis, tahun terbit, judul artikel, nama jurnal/buku, penerbit, nomor volume/isu, rentang halaman, DOI, atau URL?
+2. Otoritas dan Kredibilitas Akademik: Apakah sumber ini merupakan artikel jurnal yang ditinjau sejawat (peer-reviewed), dokumen kebijakan resmi, literatur abu-abu (grey literature), atau sumber populer? Seberapa kredibel reputasi penerbit atau lembaganya?
+3. Relevansi dan Mutu Bukti: Sejauh mana sumber ini menjawab langsung pertanyaan riset saya? Apakah metodologi dan bukti yang disajikan dalam sumber tersebut cukup kokoh untuk menopang argumen tesis?
+
+Berikan penilaian ringkas untuk setiap sumber: Sangat Layak, Layak dengan Catatan, atau Tidak Direkomendasikan.]]></field>
+            <field name="constraints"><![CDATA[Jangan memvalidasi sumber yang tidak dapat diverifikasi keberadaannya. Jika ada indikasi halusinasi atau referensi fiktif, tandai secara tegas.]]></field>
+            <field name="output_target"><![CDATA[Tabel audit mutu sumber pustaka yang menyaring rujukan paling otoritatif untuk skripsi/tesis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_3" model="thesis.prompt.library">
+            <field name="code">A.4.2.3</field>
+            <field name="name">Membangun Matriks Sumber Literatur (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Sumber-sumber terverifikasi beserta intisari atau catatan saya: [masukkan ringkasan referensi] Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi]
+
+Bangun matriks sintesis sumber literatur dalam format tabel terstruktur untuk memetakan keterkaitan antar pustaka.
+
+Matriks harus memuat kolom-kolom berikut:
+
+    - Penulis dan Tahun Publikasi;
+    - Fokus Masalah / Pertanyaan Riset;
+    - Pendekatan Teoretis atau Konseptual yang Digunakan;
+    - Metode dan Data / Materi Empiris;
+    - Temuan Kunci atau Argumen Pokok;
+    - Kontribusi Khusus atau Keterbatasan Kajian terhadap Topik Riset Saya.
+
+
+Setelah tabel matriks, sajikan sintesis naratif 2–3 paragraf yang merangkum: pola konsensus utama dalam literatur, perdebatan atau pertentangan yang belum tuntas, dan bagaimana matriks ini memposisikan urgensi penelitian saya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengarang isi kutipan atau data yang tidak tercantum dalam catatan saya.]]></field>
+            <field name="output_target"><![CDATA[Matriks pustaka komprehensif yang siap diintegrasikan ke dalam draf bab tinjauan pustaka.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_4" model="thesis.prompt.library">
+            <field name="code">A.4.2.4</field>
+            <field name="name">Menyusun Struktur Tinjauan Pustaka (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi] Sumber terverifikasi, ringkasan, atau matriks pustaka: [masukkan ringkasan pustaka]
+
+Rancang struktur bab tinjauan pustaka yang logis, tematik, dan koheren untuk skripsi jenjang Sarjana (S1).
+
+Susun kerangka bab yang terdiri atas:
+
+    - Pengantar Tinjauan Pustaka: Menjelaskan ruang lingkup literatur, kriteria pemilihan, dan alur pembahasan;
+    - Subbab Tematik (2–4 Subbab): Mengorganisasi literatur berdasarkan tema, konsep inti, atau perdebatan utama (bukan daftar ringkasan per penulis);
+    - Sintesis Kritis dan Kesenjangan Riset: Merangkum apa yang telah diketahui dan menunjukkan celah pengetahuan yang belum terjawab;
+    - Jembatan Menuju Kerangka Riset: Menjelaskan bagaimana literatur ini menjadi dasar perumusan kerangka pemikiran dan metode skripsi.
+
+
+Untuk setiap subbab, berikan 2–3 poin ringkas mengenai fungsi analitisnya dan sumber-sumber utama yang harus dikelompokkan di dalamnya.]]></field>
+            <field name="constraints"><![CDATA[Hindari penyusunan tinjauan pustaka yang sekadar mendaftar anotasi bibliografi artikel demi artikel. Pastikan sintesis berorientasi tematik konseptual.]]></field>
+            <field name="output_target"><![CDATA[Kerangka kerja struktural bab tinjauan pustaka yang siap dijadikan panduan penulisan draf.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_5" model="thesis.prompt.library">
+            <field name="code">A.4.2.5</field>
+            <field name="name">Menyusun Struktur Tinjauan Pustaka dan Posisi Teoretis (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [masukkan informasi] Kerangka teoretis kandidat atau konsep kunci: [masukkan informasi] Korpus literatur yang telah ditelaah: [masukkan ringkasan literatur]
+
+Rancang struktur bab tinjauan pustaka tingkat lanjut untuk tesis jenjang Magister (S2) yang memadukan telaah pustaka kritis dengan posisi teoretis penelitian.
+
+Struktur harus mencakup:
+
+    - Peta Lanskap Literatur: Mengidentifikasi mazhab pemikiran, perdebatan konseptual utama, dan evolusi kajian terkait topik;
+    - Evaluasi Metodologis dan Epistemologis: Menganalisis bagaimana penelitian terdahulu mendekati masalah ini, kelemahan metodologis yang berulang, dan bias yang muncul;
+    - Justifikasi Posisi Teoretis: Menunjukkan posisi tesis di antara perdebatan yang ada—apakah memperluas, menguji, mengkritik, atau mendamaikan dua perspektif berbeda;
+    - Perumusan Kesenjangan Ilmiah (Scholarly Gap): Mendefinisikan celah teoretis atau empiris secara presisi dan menghubungkannya langsung dengan kontribusi tesis.
+
+
+Sediakan poin-poin analitis per subbab serta panduan cara menyusun argumentasi yang meyakinkan bagi penguji tesis.]]></field>
+            <field name="constraints"><![CDATA[Tinjauan harus mencerminkan kedalaman kritis pascasarjana; hindari paparan deskriptif permukaan.]]></field>
+            <field name="output_target"><![CDATA[Rencana bab tinjauan pustaka dan penentuan posisi teoretis yang kokoh dan berstandar ilmiah tinggi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_6" model="thesis.prompt.library">
+            <field name="code">A.4.2.6</field>
+            <field name="name">Mengidentifikasi dan Memverifikasi Kesenjangan Penelitian (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau fokus tesis: [masukkan informasi] Sumber-sumber utama dan temuan dalam literatur: [masukkan ringkasan literatur]
+
+Lakukan identifikasi dan verifikasi kesenjangan penelitian (research gap) secara sistematis.
+
+Ujilah kesenjangan tersebut melalui empat kategori celah ilmiah:
+
+    - Celah Empiris (Empirical Gap): Apakah ada konteks baru, populasi, data mutakhir, atau fenomena yang belum pernah diteliti sebelumnya?
+    - Celah Teoretis/Konseptual (Theoretical Gap): Apakah kerangka teori yang ada saat ini gagal menjelaskan aspek tertentu dari fenomena, atau belum pernah diterapkan pada kasus ini?
+    - Celah Metodologis (Methodological Gap): Apakah ada keterbatasan pendekatan atau teknik analisis dalam studi terdahulu yang dapat dijawab dengan metode baru?
+    - Celah Kontradiktif (Contradictory Evidence Gap): Apakah terdapat temuan atau kesimpulan yang saling bertentangan di antara literatur otoritatif yang memerlukan klarifikasi baru?
+
+
+Nyatakan rumusan kesenjangan penelitian terpilih secara tegas dalam satu paragraf, disertai penjelasan mengapa pengisian celah tersebut bernilai penting secara akademik.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengklaim "belum ada yang meneliti ini" kecuali telah melalui penelusuran literatur yang ketat. Kesenjangan harus berakar pada bukti literatur yang nyata.]]></field>
+            <field name="output_target"><![CDATA[Artikulasi kesenjangan penelitian yang meyakinkan, terjustifikasi, dan siap dicantumkan dalam bab pendahuluan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_7" model="thesis.prompt.library">
+            <field name="code">A.4.2.7</field>
+            <field name="name">Klarifikasi Konsep Kunci (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Konsep yang perlu diperjelas: [masukkan konsep] Konteks disiplin atau teoritis: [masukkan konteks]
+
+Bantu memperjelas konsep-konsep kunci ini untuk keperluan tesis/skripsi saya.
+
+Untuk setiap konsep:
+1. Definisi Inti: Berikan definisi yang jelas, presisi, dan diakui secara akademis;
+2. Dimensi / Elemen Kunci: Uraikan dimensi-dimensi analitis atau komponen utama yang membentuk konsep tersebut;
+3. Diferensiasi Konseptual: Bedakan konsep ini dari konsep-konsep serupa atau istilah serumpun yang sering tertukar;
+4. Operasionalisasi Riset: Jelaskan bagaimana konsep ini dapat diamati, diidentifikasi, atau diukur dalam materi/data penelitian saya.]]></field>
+            <field name="constraints"><![CDATA[Jangan menciptakan definisi sendiri di luar konvensi ilmiah yang mapan. Sajikan variasi pemaknaan jika konsep tersebut memiliki perdebatan antar-mazhab.]]></field>
+            <field name="output_target"><![CDATA[Panduan klarifikasi konseptual yang operasional untuk memperkokoh landasan teori dan instrumen riset.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_8" model="thesis.prompt.library">
+            <field name="code">A.4.2.8</field>
+            <field name="name">Mendiagnosis Draf Tinjauan Pustaka (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf tinjauan pustaka saat ini: [tempelkan draf di sini] Pertanyaan penelitian atau topik: [masukkan informasi]
+
+Lakukan evaluasi diagnostik terhadap draf tinjauan pustaka ini berdasarkan kriteria berikut:
+
+1. Integrasi Tematik vs. Daftar Anotasi: Apakah draf ini mengelompokkan literatur secara tematik-sintesis atau hanya mendaftar ringkasan per artikel/penulis?
+2. Keterkaitan dengan Masalah Riset: Sejauh mana setiap paragraf mendukung langsung perumusan masalah dan pertanyaan penelitian saya?
+3. Keseimbangan Nada Kritis: Apakah draf hanya memaparkan temuan orang lain secara pasif, atau sudah mengevaluasi kekuatan, kelemahan, dan kontradiksi antar-studi?
+4. Alur dan Transisi Naratif: Apakah ada jembatan logis antar-subbab dan antar-paragraf?
+5. Kejelasan Kesenjangan Riset: Apakah bagian akhir tinjauan menunjukkan secara eksplisit celah pengetahuan yang akan diisi oleh penelitian ini?
+
+Sajikan daftar kekuatan naskah, kelemahan kritis yang perlu diperbaiki, serta rekomendasi langkah revisi prioritas.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah argumen orisinal penulis draf.]]></field>
+            <field name="output_target"><![CDATA[Laporan audit diagnostik tinjauan pustaka yang memberikan panduan revisi konkret.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_9" model="thesis.prompt.library">
+            <field name="code">A.4.2.9</field>
+            <field name="name">Protokol Tinjauan Sistematis atau Tinjauan Cakupan (Jenjang Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Topik dan calon pertanyaan riset: [masukkan informasi] Jenis tinjauan: [sistematis / scoping review] Bidang atau disiplin ilmu: [masukkan disiplin ilmu]
+
+Rancang protokol metodologis formal untuk tinjauan pustaka sistematis (systematic review) atau tinjauan cakupan (scoping review) pada jenjang pascasarjana.
+
+Protokol harus memuat:
+
+    - Tujuan dan Pertanyaan Tinjauan: Merumuskan pertanyaan tinjauan menggunakan kerangka standar (seperti PICO, PCC, atau SPIDER);
+    - Sumber dan Strategi Penelusuran: Pangkalan data elektronik yang wajib ditelusuri, strategi kata kunci, dan penelusuran literatur abu-abu;
+    - Kriteria Kelayakan (Kelayakan Inklusi \& Eksklusi): Parameter waktu, desain studi, populasi, konteks, dan jenis publikasi;
+    - Prosedur Seleksi dan Penyaringan: Alur penapisan judul/abstrak dan teks lengkap (mengikuti diagram alir PRISMA);
+    - Ekstraksi Data dan Penilaian Kualitas: Form ekstraksi data yang terstruktur dan alat penilaian risiko bias / mutu metodologis (seperti CASP, ROBIS, atau MMAT);
+    - Metode Sintesis: Rencana sintesis naratif, tematik, atau meta-analisis/meta-sintesis.]]></field>
+            <field name="constraints"><![CDATA[Pastikan protokol mematuhi standar pelaporan internasional (PRISMA 2020 atau PRISMA-ScR).]]></field>
+            <field name="output_target"><![CDATA[Draf protokol tinjauan pustaka yang sistematis, transparan, dan dapat direplikasi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_2_10" model="thesis.prompt.library">
+            <field name="code">A.4.2.10</field>
+            <field name="name">Memposisikan Tesis dalam Ranah Akademik (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian saya: [masukkan pertanyaan] Temuan utama dalam literatur: [masukkan ringkasan] Argumen dasar tesis saya: [masukkan argumen]
+
+Bantu saya merumuskan pernyataan posisi akademik (academic positioning statement) yang tepat untuk tesis/skripsi saya.
+
+Tunjukkan bagaimana penelitian ini menempatkan diri terhadap literatur yang ada:
+
+    - Apakah tesis ini menguji teori yang ada pada konteks baru?
+    - Apakah tesis ini memperluas atau memodifikasi konsep yang sudah mapan?
+    - Apakah tesis ini mengkritik asumsi dominan dalam literatur?
+    - Ataukah tesis ini menjembatani dua perdebatan yang selama ini terpisah?
+
+
+Rumuskan paragraf posisi akademik (sekitar 150–200 kata) yang mengartikulasikan kontribusi tesis secara percaya diri namun terukur, tanpa klaim berlebihan (overclaiming).]]></field>
+            <field name="constraints"><![CDATA[Jangan membuat klaim revolusioner yang tidak proporsional dengan skala tesis mahasiswa.]]></field>
+            <field name="output_target"><![CDATA[Rumusan posisi akademik yang tajam untuk draf bab pendahuluan dan bab kesimpulan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_1" model="thesis.prompt.library">
+            <field name="code">A.4.3.1</field>
+            <field name="name">Memetakan Definisi Konsep Lintas Sumber (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Konsep kunci: [masukkan konsep] Daftar sumber atau kutipan definisi: [masukkan kutipan definisi dari berbagai penulis]
+
+Petakan dan bandingkan bagaimana konsep ini didefinisikan di berbagai sumber literatur utama.
+
+Susun analisis komparatif yang mencakup:
+
+    - Matriks Definisi: Tabel komparasi yang memuat nama penulis/tahun, definisi harfiah, titik penekanan utama, dan konteks penggunaan;
+    - Analisis Persamaan dan Titik Temu: Unsur-unsur esensial apa yang disepakati oleh mayoritas teoretisi;
+    - Analisis Perbedaan dan Kontestasi: Di mana letak pertentangan definisi, pergeseran makna, atau batas-batas cakupan;
+    - Definisi Operasional yang Diadopsi: Usulan perumusan definisi kerja (working definition) yang paling tepat untuk digunakan dalam penelitian ini beserta justifikasinya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengaburkan konteks historis atau teoretis masing-masing sumber rujukan.]]></field>
+            <field name="output_target"><![CDATA[Pemetaan konseptual komparatif yang membimbing penetapan batasan operasional penelitian.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_2" model="thesis.prompt.library">
+            <field name="code">A.4.3.2</field>
+            <field name="name">Membangun Kerangka Konseptual (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [masukkan informasi] Konsep-konsep inti yang diteliti: [masukkan konsep] Hubungan yang diharapkan antar konsep: [masukkan penjelasan]
+
+Rancang kerangka konseptual yang jelas dan terstruktur untuk skripsi jenjang Sarjana (S1).
+
+Sediakan:
+
+    - Deskripsi Hubungan Antar Konsep: Uraikan secara naratif bagaimana konsep-konsep inti saling berhubungan, memengaruhi, atau membentuk fenomena yang diteliti;
+    - Deskripsi Skematis/Diagram: Berikan panduan visual representasi diagram alir kerangka berpikir (kotak variabel/konsep, arah panah relasi, batasan kontekstual);
+    - Asumsi Dasar: Sebutkan 2–3 premis atau asumsi logis yang mendasari kerangka berpikir ini;
+    - Fungsi Analitis: Jelaskan bagaimana kerangka konseptual ini akan memandu tahap pengumpulan data dan analisis temuan.]]></field>
+            <field name="constraints"><![CDATA[Jagalah agar kerangka konseptual tetap sederhana, terfokus, dan tidak terlalu rumit untuk skala skripsi S1.]]></field>
+            <field name="output_target"><![CDATA[Kerangka konseptual yang runtut beserta panduan visualisasi bagan kerangka berpikir.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_3" model="thesis.prompt.library">
+            <field name="code">A.4.3.3</field>
+            <field name="name">Membandingkan dan Menjustifikasi Kerangka Teoretis (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau masalah riset: [masukkan informasi] Kandidat teori atau kerangka kerja alternatif: [masukkan Teori A, Teori B, dll.] Materi atau korpus empiris yang dikaji: [masukkan materi]
+
+Lakukan perbandingan kritis dan justifikasi pemilihan kerangka teoretis untuk tesis jenjang Magister (S2).
+
+Evaluasi setiap kandidat teori berdasarkan:
+
+    - Kekuatan Penjelas (Explanatory Power): Seberapa tajam teori tersebut mampu menerangi fenomena dan menjawab pertanyaan riset;
+    - Kesesuaian dengan Sifat Data (Data Compatibility): Apakah asumsi ontologis/epistemologis teori selaras dengan bentuk materi empiris yang saya miliki;
+    - Keterbatasan dan Titik Buta (Blind Spots): Aspek penting apa dari fenomena yang luput dari jangkauan teori tersebut;
+    - Justifikasi Pemilihan Teori Akhir: Susun argumen akademik mengapa teori terpilih adalah pilihan terbaik untuk tesis ini (atau bagaimana dua teori dapat dikombinasikan secara komplementer tanpa kontradiksi filosofis).]]></field>
+            <field name="constraints"><![CDATA[Hindari eklektisisme teoretis yang tidak kritis (mencampuradukkan teori yang bertentangan secara paradigma tanpa justifikasi).]]></field>
+            <field name="output_target"><![CDATA[Bagian justifikasi kerangka teoretis yang kokoh untuk bab landasan teori tesis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_4" model="thesis.prompt.library">
+            <field name="code">A.4.3.4</field>
+            <field name="name">Uji Kompatibilitas Kerangka Teoretis (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi] Kerangka teoretis yang diusulkan: [masukkan teori] Pendekatan metodologis dan jenis data yang direncanakan: [masukkan metode dan data]
+
+Lakukan uji kompatibilitas filosofis dan metodologis (compatibility check) terhadap rancangan penelitian ini.
+
+Evaluasi keselarasan pada tingkatan:
+
+    - Keselarasan Epistemologis: Apakah paradigma teori (misalnya positivisme, interpretivisme, kritis, konstruktivisme) cocok dengan metode analisis yang dipilih?
+    - Keselarasan Konseptual-Data: Apakah unit analisis dalam teori sesuai dengan unit observasi dalam data yang akan dikumpulkan?
+    - Potensi Friksi atau Kontradiksi: Di mana letak potensi ketidaksinkronan antara konsep teoretis abstrak dengan realitas materi empiris di lapangan?
+
+
+Jika ditemukan ketidakselarasan, usulkan langkah kalibrasi perbaikan agar seluruh elemen penelitian berada dalam satu kesatuan paradigma yang harmonis.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengabaikan asumsi ontologis dasar dari teori yang diadopsi.]]></field>
+            <field name="output_target"><![CDATA[Laporan uji kompatibilitas yang memastikan keselarasan internal desain penelitian dari hulu ke hilir.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_5" model="thesis.prompt.library">
+            <field name="code">A.4.3.5</field>
+            <field name="name">Mengoperasionalkan Konsep ke Kategori Analitis atau Variabel (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Konsep teoretis abstrak yang akan dioperasionalkan: [masukkan konsep] Jenis penelitian: [kualitatif / kuantitatif / campuran / yuridis] Konteks materi riset: [masukkan konteks]
+
+Operasionalkan konsep abstrak tersebut ke dalam indikator empiris, variabel terukur, atau kategori analitis yang konkret.
+
+Sajikan dalam bentuk tabel operasionalisasi yang memuat:
+
+    - Konsep Induk: Nama dan definisi teoretisnya;
+    - Dimensi / Sub-konsep: Pembagian turunan dari konsep tersebut;
+    - Indikator Empiris / Kategori Analisis: Bukti konkret, tanda teramati, atau parameter yang dicari dalam data;
+    - Pertanyaan / Butir Instrumen Terkait: Contoh pertanyaan wawancara, butir kuesioner, atau kode analisis teks yang mengukur indikator tersebut.]]></field>
+            <field name="constraints"><![CDATA[Pastikan proses operasionalisasi tidak mereduksi makna esensial konsep menjadi terlalu sempit atau kehilangan kedalaman filosofisnya.]]></field>
+            <field name="output_target"><![CDATA[Matriks operasionalisasi konsep yang siap menjadi jembatan antara landasan teori dengan instrumen pengumpulan data.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_6" model="thesis.prompt.library">
+            <field name="code">A.4.3.6</field>
+            <field name="name">Teori atau Konsep sebagai Materi Utama Kajian (Tesis Teoretis/Kritis)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau tujuan tesis: [masukkan informasi] Korpus teks teoretis, filosofis, doktrinal, atau yuridis yang dikaji: [masukkan korpus teks rujukan] Kerangka analitis atau pendekatan kritis yang digunakan: [masukkan pendekatan]
+
+Bantu merancang alur analisis untuk tesis teoretis, konseptual, yuridis normatif, atau kajian kritis di mana teori/doktrin itu sendiri berfungsi sebagai materi primer penelitian.
+
+Rancang strategi kajian yang mencakup:
+
+    - Pembatasan Korpus Teks Primer: Kriteria penetapan teks utama, risalah, undang-undang, atau naskah filosofis yang dijadikan bahan telaah;
+    - Pendekatan Pembacaan Kritis: Teknik analisis teks yang digunakan (misalnya hermeneutika, analisis wacana kritis, dekonstruksi, penalaran hukum silogistik/doktrinal, atau sejarah konseptual);
+    - Tema atau Sumbu Masalah Analitis: Pengorganisasian alur analisis teks berdasarkan pokok pertentangan atau evolusi pemikiran;
+    - Argumen dan Evaluasi Normatif/Teoretis: Bagaimana tesis mengevaluasi koherensi internal teks, implikasi logisnya, dan kontribusinya terhadap wacana ilmiah saat ini.]]></field>
+            <field name="constraints"><![CDATA[Jangan memperlakukan teks primer hanya sebagai latar belakang; posisikan teks sebagai objek analisis mendalam.]]></field>
+            <field name="output_target"><![CDATA[Desain metodologis dan kerangka analitis yang matang untuk tesis berbasis studi pustaka/teoretis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_3_7" model="thesis.prompt.library">
+            <field name="code">A.4.3.7</field>
+            <field name="name">Mendiagnosis Draf Bagian Konseptual atau Teoretis (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf bagian kerangka konseptual atau teoretis: [tempelkan draf di sini] Pertanyaan penelitian: [masukkan pertanyaan]
+
+Lakukan diagnosis menyeluruh terhadap draf bagian kerangka konseptual/teoretis ini untuk menilai kualitas ilmiahnya.
+
+Evaluasi empat aspek kunci:
+
+    - Ketepatan dan Otoritas Rujukan: Apakah teori dirujuk dari sumber primer otoritatif, ataukah hanya mengandalkan kutipan sekunder dan buku pengantar dasar?
+    - Fungsionalitas Teori: Apakah teori benar-benar berfungsi sebagai pisau bedah analisis (analytical instrument), ataukah hanya sekadar "pajangan" dekoratif yang tidak berdampak pada metodologi?
+    - Koherensi Internal: Apakah konsep-konsep yang digunakan saling terhubung secara logis tanpa ada kontradiksi pengertian?
+    - Kejelasan Definisi Kerja: Apakah setiap istilah teknis telah diberikan definisi kerja yang presisi untuk membatasi ruang lingkup analisis?
+
+
+Berikan catatan korektif per paragraf dan rekomendasi draf perbaikan.]]></field>
+            <field name="constraints"><![CDATA[Jangan menulis ulang seluruh naskah tanpa mempertahankan substansi dasar riset mahasiswa.]]></field>
+            <field name="output_target"><![CDATA[Evaluasi diagnostik yang terperinci untuk menyempurnakan bab landasan teori.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_1" model="thesis.prompt.library">
+            <field name="code">A.4.4.1</field>
+            <field name="name">Mengidentifikasi Materi Riset yang Sesuai (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi] Tipe penelitian yang direncanakan: [empiris / teks / studi kasus / hukum / data statistik] Konteks lapangan atau sumber daya yang dimiliki: [masukkan informasi]
+
+Identifikasi dan tentukan materi atau data riset yang paling sesuai untuk menjawab pertanyaan penelitian ini.
+
+Uraikan:
+
+    - Jenis Materi Riset yang Diperlukan: Tentukan apakah membutuhkan data primer (wawancara, survei, observasi) atau data sekunder (dokumen resmi, putusan peradilan, arsip, laporan statistik, korpus media);
+    - Kecukupan dan Skala Data: Perkirakan volume materi yang dibutuhkan (misalnya jumlah narasumber, rentang waktu dokumen, jumlah sampel) agar memenuhi syarat keterwakilan dan kejenuhan data (data saturation);
+    - Kelayakan Akses dan Ketersediaan: Analisis kendala izin akses, kerahasiaan informasi, atau hambatan teknis untuk memperoleh data tersebut;
+    - Materi Alternatif (Rencana Cadangan): Usulkan materi pengganti yang dapat diakses jika sumber data utama mengalami hambatan perizinan.]]></field>
+            <field name="constraints"><![CDATA[Pastikan usulan materi data benar-benar terjangkau oleh mahasiswa dalam batas waktu pengerjaan tesis.]]></field>
+            <field name="output_target"><![CDATA[Rencana identifikasi materi riset yang realistis dan terjustifikasi secara metodologis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_2" model="thesis.prompt.library">
+            <field name="code">A.4.4.2</field>
+            <field name="name">Membandingkan Opsi Metode dan Pendekatan Analitis (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan pertanyaan] Materi/data riset yang tersedia: [masukkan data] Opsi metode atau pendekatan analitis yang sedang dipertimbangkan: [misalnya Opsi A vs Opsi B]
+
+Bandingkan pilihan opsi metode penelitian dan pendekatan analitis ini untuk menentukan mana yang paling tepat bagi skripsi/tesis saya.
+
+Bandingkan berdasarkan kriteria berikut:
+
+    - Kesesuaian dengan Karakter Data: Metode mana yang paling alami dalam mengekstraksi makna dari data yang ada;
+    - Ketuntasan Analisis: Seberapa mendalam metode mampu menjawab pertanyaan penelitian;
+    - Tuntutan Keterampilan dan Waktu: Kurva pembelajaran software, kompleksitas prosedur teknis, dan waktu pengerjaan;
+    - Kekuatan Bukti Akademik: Standar ketelitian (rigour), validitas, dan reliabilitas yang diakui dalam disiplin ilmu terkait.
+
+
+Berikan rekomendasi akhir disertai pertimbangan ilmiah mengapa satu metode lebih unggul untuk konteks penelitian ini.]]></field>
+            <field name="constraints"><![CDATA[Jangan memilih metode hanya karena "mudah"; pertahankan standar keilmuan yang memadai.]]></field>
+            <field name="output_target"><![CDATA[Analisis komparatif metode riset yang dapat dijadikan dasar penulisan subbab justifikasi metode.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_3" model="thesis.prompt.library">
+            <field name="code">A.4.4.3</field>
+            <field name="name">Mengoperasionalkan Metode atau Pendekatan Analitis (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Metode atau pendekatan analitis terpilih: [masukkan metode] Pertanyaan penelitian: [masukkan pertanyaan] Materi/data yang dimiliki: [masukkan data]
+
+Operasionalkan metode penelitian terpilih menjadi langkah-langkah kerja analitis yang konkret, prosedural, dan terstruktur.
+
+Rincikan tahapan prosedur meliputi:
+
+    - Tahap Pra-Analisis: Pembersihan data, transkripsi, penataan dokumen, validasi awal, dan pengorganisasian berkas;
+    - Tahap Pengolahan / Pengodean: Langkah-langkah pengodean (terbuka, aksial, selektif) untuk kualitatif, atau tahapan transformasi variabel dan uji prasyarat untuk kuantitatif;
+    - Tahap Analisis dan Sintesis: Cara mengidentifikasi pola, menguji relasi, merekonsiliasi anomali, dan menyusun temuan utama;
+    - Prosedur Penjaminan Keabsahan Data: Teknik triangulasi, member checking, audit trail, atau uji validitas dan reliabilitas statistik.]]></field>
+            <field name="constraints"><![CDATA[Susun prosedur yang dapat diaudit dan direplikasi oleh peneliti lain secara transparan.]]></field>
+            <field name="output_target"><![CDATA[Prosedur operasional analisis yang terperinci dan siap dimasukkan ke dalam bab metodologi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_4" model="thesis.prompt.library">
+            <field name="code">A.4.4.4</field>
+            <field name="name">Merancang Strategi Penelitian (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [masukkan informasi] Landasan teoretis: [masukkan teori] Materi empiris atau korpus data: [masukkan data] Disiplin ilmu dan tradisi penelitian: [masukkan tradisi riset]
+
+Rancang strategi penelitian (research strategy) tingkat lanjut yang komprehensif untuk tesis jenjang Magister (S2).
+
+Strategi riset harus mencakup:
+
+    - Desain Penelitian Menyeluruh: Penentuan tipologi riset (misalnya studi kasus mendalam, komparatif, fenomenologis, eksplanatori, atau desain metode campuran);
+    - Logika Inferensi Ilmiah: Menjelaskan apakah riset bergerak secara induktif, deduktif, atau abduktif dalam menghubungkan data dengan teori;
+    - Strategi Penarikan Sampel / Pemilihan Kasus: Justifikasi teoritis dalam pemilihan kasus ekstrim, tipikal, atau purposif;
+    - Strategi Integrasi Data dan Analisis: Mekanisme menghubungkan berbagai sumber bukti secara sinergis;
+    - Standar Ketelitian Ilmiah (Scholarly Rigour): Parameter kredibilitas, transferabilitas, dependabilitas, dan konfirmabilitas (atau validitas internal/eksternal).]]></field>
+            <field name="constraints"><![CDATA[Desain harus memenuhi standar tuntutan orisinalitas dan kedalaman analisis pascasarjana.]]></field>
+            <field name="output_target"><![CDATA[Blueprint rancangan strategi penelitian yang kokoh untuk naskah proposal tesis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_5" model="thesis.prompt.library">
+            <field name="code">A.4.4.5</field>
+            <field name="name">Tinjauan Etika, Hukum, dan Perlindungan Data Desain Riset (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Ringkasan desain penelitian: [masukkan ringkasan desain] Partisipan atau subjek data: [deskripsikan subjek] Jenis data yang dikumpulkan: [masukkan jenis data] Institusi dan negara yurisdiksi: [masukkan informasi]
+
+Lakukan tinjauan etika penelitian, kepatuhan hukum, dan perlindungan data pribadi terhadap rancangan riset ini.
+
+Evaluasi aspek-aspek berikut:
+
+    - Prinsip Etika Partisipan: Kebutuhan persetujuan atas dasar informasi (informed consent), hak penarikan diri sewaktu-waktu, perlindungan kelompok rentan, dan mitigasi potensi bahaya psikologis/sosial;
+    - Kepatuhan Perlindungan Data (Data Protection): Kepatuhan regulasi perlindungan data pribadi (seperti UU PDP di Indonesia atau GDPR di Eropa), keharusan minimisasi data, prosedur anonimisasi atau pseudonimisasi, serta keamanan penyimpanan berkas;
+    - Integritas dan Hak Kekayaan Intelektual: Masalah hak cipta materi teks, izin penggunaan basis data tertutup, dan kerahasiaan institusi tempat penelitian;
+    - Batasan Etis Penggunaan AI Generatif: Ketentuan tegas bahwa data pribadi mentah atau dokumen rahasia tidak boleh diunggah ke alat AI Generatif publik tanpa persetujuan etik.]]></field>
+            <field name="constraints"><![CDATA[Tinjauan ini adalah instrumen refleksi akademik dan tidak menggantikan keputusan resmi Komite Etik Penelitian universitas.]]></field>
+            <field name="output_target"><![CDATA[Rencana mitigasi risiko etik dan lembar kepatuhan perlindungan data yang siap diajukan ke komisi etik.]]></field>
+        </record>
+
+        <record id="prompt_a_4_4_6" model="thesis.prompt.library">
+            <field name="code">A.4.4.6</field>
+            <field name="name">Pemeriksaan Keselarasan Desain Riset (Jenjang S1 dan S2/S3—Dapat Diulang)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi] Kerangka teoretis: [masukkan teori] Jenis materi / data riset: [masukkan data] Metode analisis: [masukkan metode]
+
+Lakukan pemeriksaan keselarasan internal desain riset (design alignment check) secara menyeluruh.
+
+Periksa kekuatan tautan antar komponen:
+
+    - Tautan 1 (Pertanyaan $$ Teori): Apakah kerangka teori yang dipilih benar-benar relevan untuk membedah pertanyaan penelitian?
+    - Tautan 2 (Pertanyaan $$ Data): Apakah jenis dan volume data yang direncanakan cukup untuk menjawab pertanyaan riset secara tuntas?
+    - Tautan 3 (Data $$ Metode): Apakah metode analisis yang digunakan mampu mengolah bentuk data tersebut tanpa distorsi makna?
+    - Tautan 4 (Metode $$ Target Luaran): Apakah hasil analisis dari metode tersebut akan menghasilkan temuan yang menjawab langsung tujuan awal?
+
+
+Laporkan status setiap tautan (Kuat / Selaras, Kurang Sinkron, atau Terputus), soroti tautan paling rentan, dan berikan solusi penyelarasan yang efisien.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah topik riset dalam saran perbaikan.]]></field>
+            <field name="output_target"><![CDATA[Diagnosis keselarasan desain penelitian yang dapat dijalankan berulang kali setiap kali rancangan penelitian mengalami perubahan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_5_1" model="thesis.prompt.library">
+            <field name="code">A.4.5.1</field>
+            <field name="name">Menulis Rencana Penelitian / Proposal (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi] Topik dan latar belakang: [masukkan informasi] Kerangka pemikiran / teori: [masukkan informasi] Rencana materi dan metode: [masukkan informasi] Alokasi waktu pengerjaan: [masukkan waktu]
+
+Susun draf rencana penelitian (proposal skripsi) yang terstruktur dan lengkap untuk jenjang Sarjana (S1).
+
+Rencana proposal harus memuat:
+
+    - Judul Proposal: Spesifik, jelas, dan memuat variabel/fokus utama;
+    - Latar Belakang dan Urgensi Riset: Masalah riil di lapangan, literatur pengantar, dan alasan penelitian penting dilakukan;
+    - Rumusan Masalah dan Pertanyaan Penelitian: 1–3 pertanyaan riset yang terfokus;
+    - Tujuan dan Manfaat Penelitian: Manfaat teoretis bagi ilmu pengetahuan dan manfaat praktis;
+    - Tinjauan Pustaka dan Kerangka Berpikir: Ringkasan literatur kunci dan bagan kerangka konseptual;
+    - Metodologi Penelitian: Jenis penelitian, lokasi/sumber data, teknik pengumpulan, instrumen, dan teknik analisis data;
+    - Jadwal Kerja Mingguan: Matriks jadwal pengerjaan skripsi dari penulisan draf hingga ujian sidang;
+    - Daftar Pustaka Sementara: Rujukan awal yang relevan dan terverifikasi.]]></field>
+            <field name="constraints"><![CDATA[Pastikan ruang lingkup proposal realistis untuk diselesaikan mahasiswa S1 tepat waktu.]]></field>
+            <field name="output_target"><![CDATA[Naskah draf proposal skripsi yang utuh dan siap dikonsultasikan dengan calon dosen pembimbing.]]></field>
+        </record>
+
+        <record id="prompt_a_4_5_2" model="thesis.prompt.library">
+            <field name="code">A.4.5.2</field>
+            <field name="name">Menulis Rencana Penelitian / Proposal (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi] Orientasi teoretis: [masukkan teori] Materi empiris dan metodologi: [masukkan data dan metode] Estimasi kontribusi ilmiah: [masukkan kontribusi] Waktu yang tersedia: [masukkan waktu]
+
+Susun draf proposal tesis yang mendalam dan komprehensif untuk jenjang Magister (S2).
+
+Proposal harus mencakup:
+
+    - Pernyataan Masalah dan Signifikansi Ilmiah: Menjelaskan latar belakang teoritis dan praktis mengapa penelitian ini krusial dalam disiplin ilmu terkait;
+    - Kesenjangan Penelitian (Research Gap): Menunjukkan celah literatur spesifik yang belum terjawab oleh penelitian terdahulu;
+    - Pertanyaan Penelitian dan Hipotesis (jika relevan): Perumusan pertanyaan riset yang berbobot analitis pascasarjana;
+    - Landasan Teoretis dan Kerangka Konseptual: Landasan konseptual mendalam dan definisi operasional konsep inti;
+    - Desain Metodologis Rinci: Justifikasi pemilihan metode, teknik sampling/korpus, instrumen, prosedur analisis, dan standar validitas data;
+    - Pertimbangan Etika dan Manajemen Risiko: Mitigasi risiko etis, izin akses lapangan, dan kepatuhan hukum perlindungan data;
+    - Kontribusi Ilmiah yang Diharapkan: Nilai tambah orisinal bagi pengembangan teori, kebijakan, atau metodologi;
+    - Rencana Jadwal Kerja dan Target Capaian (Milestones): Rencana kerja bertahap dari pengumpulan data hingga publikasi naskah.]]></field>
+            <field name="constraints"><![CDATA[Proposal harus menunjukkan kemandirian berpikir kritis dan kedalaman metodologis jenjang pascasarjana.]]></field>
+            <field name="output_target"><![CDATA[Naskah proposal tesis terstandar yang siap diajukan ke seminar proposal.]]></field>
+        </record>
+
+        <record id="prompt_a_4_6_1" model="thesis.prompt.library">
+            <field name="code">A.4.6.1</field>
+            <field name="name">Merancang Struktur Bab Tesis/Skripsi (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [tempelkan pertanyaan riset di sini] Materi/data riset yang digunakan: [tempelkan deskripsi materi di sini]
+
+Rancang struktur bab skripsi standar (jenjang Sarjana S1) yang logis, runtut, dan proporsional.
+
+Struktur bab harus mencakup:
+
+    - Bab I: Pendahuluan (Latar belakang, rumusan masalah, pertanyaan penelitian, tujuan, manfaat, dan struktur penulisan);
+    - Bab II: Tinjauan Pustaka dan Kerangka Berpikir (Kajian literatur terkait, landasan konseptual/teoretis, kerangka pemikiran, dan hipotesis jika ada);
+    - Bab III: Metodologi Penelitian (Desain riset, materi/sumber data, teknik pengumpulan, instrumen, keabsahan data, dan teknik analisis);
+    - Bab IV: Hasil Penelitian dan Pembahasan (Pemaparan temuan data secara terorganisasi dan interpretasi hasil yang berdialog dengan teori/literatur);
+    - Bab V: Kesimpulan dan Saran (Sintesis jawaban atas pertanyaan riset, keterbatasan penelitian, serta rekomendasi akademis dan praktis).
+
+
+Untuk setiap bab, berikan 2–3 poin ringkas yang menguraikan fungsi analitisnya dan bagaimana alur bab mendukung bangunan argumen skripsi.]]></field>
+            <field name="constraints"><![CDATA[Jaga agar pembagian subbab tidak terlalu rumit dan realistis untuk skripsi jenjang Sarjana.]]></field>
+            <field name="output_target"><![CDATA[Rencana struktur bab skripsi yang koheren dari pendahuluan hingga kesimpulan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_6_2" model="thesis.prompt.library">
+            <field name="code">A.4.6.2</field>
+            <field name="name">Prompt Alternatif: Struktur Bab Sesuai Panduan Institusi (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pedoman struktur tesis dari institusi/universitas: [tempelkan pedoman institusi di sini] Pertanyaan penelitian, tujuan, atau rumusan masalah: [tempelkan pertanyaan riset di sini] Materi/data penelitian: [tempelkan deskripsi materi di sini]
+
+Sesuaikan dan kembangkan struktur bab skripsi/tesis agar mematuhi pedoman baku yang telah ditetapkan oleh universitas, sekaligus selaras dengan desain penelitian spesifik saya.
+
+Sajikan:
+
+    - Daftar Bab dan Subbab: Judul bab dan subbab yang telah dikustomisasi sesuai pedoman universitas dan topik riset saya;
+    - Poin Fungsi Analitis: 2–3 poin ringkas per bab yang menjelaskan apa yang dibahas dan tujuan analitisnya;
+    - Penjelasan Kepatuhan Pedoman: Penjelasan singkat bagaimana susunan bab ini menaati format baku institusi;
+    - Penyesuaian Khusus: Adaptasi khusus yang dilakukan jika penelitian bersifat konseptual, yuridis, kualitatif, atau eksperimental.]]></field>
+            <field name="constraints"><![CDATA[Jangan melanggar pedoman wajib universitas; lakukan penyesuaian yang fleksibel di tingkat subbab.]]></field>
+            <field name="output_target"><![CDATA[Struktur bab skripsi/tesis yang sepenuhnya mematuhi buku pedoman penulisan universitas.]]></field>
+        </record>
+
+        <record id="prompt_a_4_6_3" model="thesis.prompt.library">
+            <field name="code">A.4.6.3</field>
+            <field name="name">Merancang Struktur Bab Tesis (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [tempelkan pertanyaan riset di sini] Materi/data riset: [tempelkan deskripsi materi di sini] Orientasi teoretis: [masukkan orientasi teoretis]
+
+Rancang struktur bab tesis standar jenjang Magister (S2) yang menunjukkan kedalaman analitis dan progresi argumentasi yang kokoh.
+
+Struktur bab harus mencerminkan standar pascasarjana:
+
+    - Bab I: Pendahuluan dan Masalah Ilmiah (Pernyataan masalah akademik, konteks, signifikansi, pertanyaan riset, dan garis besar argumen tesis);
+    - Bab II: Landasan Teori dan Posisi Literatur (Kajian literatur kritis, perdebatan konseptual, penentuan posisi teoretis, dan celah penelitian);
+    - Bab III: Strategi Metodologis dan Desain Analisis (Justifikasi paradigma, metodologi, prosedur pengumpulan korpus data, operasionalisasi analitis, dan etika riset);
+    - Bab IV \& V: Analisis Temuan dan Diskusi Tematik (Dapat dipecah menjadi beberapa bab tematik sesuai kompleksitas analisis data pascasarjana);
+    - Bab VI: Pembahasan Kritis dan Implikasi (Integrasi temuan lintas bab, dialog dengan literatur, implikasi teoretis/kebijakan, dan keterbatasan studi);
+    - Bab VII: Kesimpulan dan Agenda Riset Lanjutan (Kontribusi ilmiah orisinal tesis dan rekomendasi agenda riset masa depan).
+
+
+Sertakan 2–3 poin substansial per bab yang merincikan perannya dalam menopang kontribusi ilmiah tesis.]]></field>
+            <field name="constraints"><![CDATA[Struktur harus menunjukkan kedalaman epistemologis dan analitis jenjang Magister.]]></field>
+            <field name="output_target"><![CDATA[Rencana arsitektur bab tesis pascasarjana yang komprehensif dan siap diajukan ke pembimbing.]]></field>
+        </record>
+
+        <record id="prompt_a_4_6_4" model="thesis.prompt.library">
+            <field name="code">A.4.6.4</field>
+            <field name="name">Prompt Alternatif: Struktur Bab Sesuai Panduan Institusi (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pedoman institusional tesis pascasarjana: [tempelkan pedoman institusi di sini] Pertanyaan penelitian atau rumusan masalah: [tempelkan pertanyaan riset di sini] Materi empiris atau korpus data: [tempelkan deskripsi materi di sini]
+
+Integrasikan pedoman penulisan tesis resmi universitas dengan desain riset teoretis/empiris tingkat lanjut dari penelitian ini.
+
+Susun:
+
+    - Susunan Bab dan Subbab Tesis: Penyesuaian judul bab dan subbab yang menaati sistematika institusi namun mencerminkan kekhususan topik riset;
+    - Uraian Fungsi Per Bab: 2–3 poin ringkas per bab yang menjelaskan sasaran analitis dan argumen yang dibangun;
+    - Keterkaitan Antar Bab: Narasi singkat yang menunjukkan benang merah keselarasan antar bab dari rumusan masalah hingga kontribusi;
+    - Justifikasi Adaptasi Institusional: Penjelasan mengapa struktur ini memenuhi regulasi kelulusan akademik universitas.]]></field>
+            <field name="constraints"><![CDATA[Pastikan pembagian bab dan lampiran memenuhi kriteria kelayakan pengujian tesis universitas.]]></field>
+            <field name="output_target"><![CDATA[Kerangka bab tesis pascasarjana yang presisi, taat aturan kampus, dan berbobot ilmiah tinggi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_1" model="thesis.prompt.library">
+            <field name="code">A.4.7.1</field>
+            <field name="name">Strategi Pengumpulan atau Pemilihan Materi Riset (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi] Tipe penelitian: [empiris / berbasis dokumen atau teks / yuridis normatif / teoretis / campuran] Jenjang studi: [Sarjana S1 / Magister S2] Waktu yang tersedia: [masukkan alokasi waktu] Akses data yang telah terkonfirmasi: [masukkan akses data]
+
+Rancang strategi pengumpulan atau pemilihan materi riset yang realistis, terukur, dan terhindar dari hambatan di lapangan.
+
+Rincikan:
+
+    - Kebutuhan Materi dan Perkiraan Volume: Materi data apa yang dibutuhkan dan estimasi jumlahnya agar memadai secara ilmiah;
+    - Logika Sampling atau Seleksi Sumber: Logika penarikan sampel, pemilihan studi kasus, batasan korpus teks, atau kriteria inklusi sumber;
+    - Kronologi Alur Pengumpulan Data: Urutan langkah kerja pengumpulan dari persiapan awal hingga penutupan lapangan;
+    - Prasyarat yang Harus Dipenuhi: Izin penelitian, surat pengantar kampus, persetujuan etik, atau perjanjian kerahasiaan sebelum proses dimulai;
+    - Kriteria Penghentian (Stopping Criteria): Kapan pengumpulan data dinyatakan cukup (misalnya kejenuhan data kualitatif atau tercapainya kuota sampel);
+    - Mitigasi Risiko Akses dan Etika: Antisipasi jika narasumber menolak diwawancarai atau dokumen arsip tidak dapat diakses.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengasumsikan izin akses yang belum saya kantongi secara resmi. Pisahkan antara penyiapan data dengan prosedur analisisnya.]]></field>
+            <field name="output_target"><![CDATA[Rencana aksi pengumpulan materi riset yang siap dieksekusi secara sistematis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_2" model="thesis.prompt.library">
+            <field name="code">A.4.7.2</field>
+            <field name="name">Merancang Instrumen Riset (Tesis Empiris)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [masukkan informasi] Konsep kunci yang wajib diukur/dijawab: [masukkan konsep kunci] Jenis instrumen riset: [pedoman wawancara / kuesioner survei / protokol observasi / lainnya] Partisipan atau subjek penelitian: [deskripsikan partisipan] Jenjang studi: [Sarjana S1 / Magister S2]
+
+Rancang draf instrumen pengumpulan data penelitian empiris untuk ditelaah oleh dosen pembimbing.
+
+Sajikan sesuai jenis instrumen:
+
+    - Untuk Pedoman Wawancara: Susun pertanyaan terbuka yang netral dan bebas dari keberpihakan, dikelompokkan berdasarkan tema konseptual, disertai pertanyaan pelacak (probing questions); petakan konsep mana yang dijawab oleh setiap butir pertanyaan;
+    - Untuk Kuesioner Survei: Susun butir-butir pernyataan/pertanyaan beserta format pilihan jawaban (misalnya skala Likert); pastikan tidak ada pertanyaan bersayap ganda (double-barrelled questions) atau kalimat yang mengarahkan jawaban;
+    - Untuk Protokol Observasi: Rincikan aspek apa yang diamati, kategori fokus pengamatan, dan cara pencatatan kejadian di lapangan.
+
+
+Identifikasi pula konsep yang belum tercover, potensi pertanyaan yang terlalu membebani responden, serta pertanyaan sensitif yang memerlukan perhatian etis khusus.]]></field>
+            <field name="constraints"><![CDATA[Draf instrumen ini merupakan bahan telaah dan uji coba awal, bukan instrumen final yang siap disebarkan ke publik tanpa telaah pembimbing.]]></field>
+            <field name="output_target"><![CDATA[Draf instrumen riset empiris yang selaras dengan konsep kunci dan bebas dari bias metodologis.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_3" model="thesis.prompt.library">
+            <field name="code">A.4.7.3</field>
+            <field name="name">Merancang Kriteria Pemilihan Sumber (Tesis Non-Empiris)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian atau rumusan masalah: [masukkan informasi] Jenis materi riset: [teks / bahan hukum / dokumen kebijakan / studi kasus / materi arsip / literatur teoretis] Kerangka teoretis atau konseptual: [masukkan informasi] Jenjang studi: [Sarjana S1 / Magister S2]
+
+Rancang kriteria pemilihan sumber materi (source-selection criteria) dan batas-batas korpus teks untuk tesis non-empiris / studi pustaka.
+
+Rincikan:
+
+    - Kriteria Inklusi: Karakteristik apa yang wajib dimiliki suatu teks agar layak dimasukkan ke dalam korpus telaah (otoritas lembaga, tahun terbit, jenis doktrin, yurisdiksi, relevansi tema);
+    - Kriteria Eksklusi: Alasan apa yang mendasari dikeluarkannya suatu teks dari korpus kajian;
+    - Batas Ruang Lingkup Korpus: Batasan periode waktu, wilayah geografis, yurisdiksi hukum, bahasa, dan status publikasi;
+    - Logika Pengurangan Korpus: Bagaimana korpus teks diseleksi jika jumlah materi yang ditemukan terlalu masif untuk dianalisis oleh satu peneliti;
+    - Keterlacakan Rekonstruksi (Reconstructability): Rumuskan kriteria dengan tingkat presisi yang memungkinkan pembaca atau peneliti lain memperoleh korpus materi yang sama persis jika menerapkan aturan tersebut.]]></field>
+            <field name="constraints"><![CDATA[Tetapkan kriteria objektif dan transparan; hindari seleksi sumber yang subjektif atau hanya memilih teks yang mendukung asumsi pribadi (cherry-picking).]]></field>
+            <field name="output_target"><![CDATA[Kriteria seleksi sumber teks yang terstandar dan siap dimuat dalam bab metodologi.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_4" model="thesis.prompt.library">
+            <field name="code">A.4.7.4</field>
+            <field name="name">Persiapan Persetujuan Etis, Privasi, dan Perlindungan Data Partisipan</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Ringkasan desain penelitian: [masukkan ringkasan] Partisipan penelitian: [deskripsikan partisipan] Data yang akan dikumpulkan: [masukkan jenis data] Institusi dan negara yurisdiksi hukum: [masukkan informasi]
+
+Siapkan instrumen persetujuan partisipan (informed consent), perlindungan privasi, dan tata kelola data untuk ditinjau oleh pembimbing dan komite etik penelitian.
+
+Susun draf dokumen meliputi:
+
+    - Lembar Informasi Partisipan (Participant Information Sheet): Penjelasan tujuan riset, aktivitas yang akan dilakukan partisipan, penegasan sifat sukarela, hak mengundurkan diri tanpa konsekuensi, jaminan kerahasiaan identitas, pemanfaatan data untuk publikasi ilmiah, masa penyimpanan data, dan kontak peneliti/pembimbing;
+    - Formulir Persetujuan (Consent Form): Poin-poin pernyataan kesediaan yang harus disetujui dan ditandatangani oleh partisipan;
+    - Rencana Perlindungan Data (Data Protection Plan): Data pribadi apa yang dikumpulkan dan justifikasi kebutuhannya; penerapan minimisasi data; prosedur anonimisasi atau pseudonimisasi; lokasi penyimpanan yang aman (terenkripsi); pihak yang memiliki hak akses; masa retensi data; dan prosedur pemusnahan data pasca-penelitian;
+    - Batasan Penggunaan AI Generatif: Penegasan tertulis bahwa data mentah yang memuat identitas pribadi partisipan, rekaman suara, atau transkrip wawancara rahasia TIDAK AKAN PERNAH dimasukkan ke dalam sistem AI Generatif publik demi menjaga kerahasiaan subjek riset.]]></field>
+            <field name="constraints"><![CDATA[Dokumen ini adalah draf kerja akademik dan bukan nasihat hukum formal; sesuaikan dengan formulir baku komisi etik universitas Anda.]]></field>
+            <field name="output_target"><![CDATA[Paket dokumen etika persetujuan partisipan dan perlindungan data yang siap diajukan ke komisi etik kampus.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_5" model="thesis.prompt.library">
+            <field name="code">A.4.7.5</field>
+            <field name="name">Tinjauan Etika dan Kelayakan Rencana Pengumpulan Materi (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Rencana pengumpulan atau pemilihan materi riset: [masukkan rencana] Tipe penelitian: [masukkan tipe] Institusi dan yurisdiksi: [masukkan informasi]
+
+Lakukan tinjauan etika dan kelayakan menyeluruh terhadap rencana pengumpulan materi riset ini. Laporkan evaluasi secara terpisah pada dimensi-dimensi berikut:
+
+1. Akses dan Izin: Hal apa yang wajib diamankan sebelum pengumpulan data dimulai, dan apa dampak risetnya jika izin ditolak atau tertunda?
+2. Persetujuan dan Privasi Partisipan: Jika melibatkan subjek manusia atau data pribadi, apa saja syarat etis yang wajib dipenuhi dan apa yang masih kurang dalam rencana saat ini?
+3. Perlindungan dan Keamanan Data: Apakah aspek penyimpanan, enkripsi, hak akses, durasi retensi, dan anonimisasi data telah dirancang secara memadai?
+4. Hak Cipta dan Penggunaan Sumber: Apakah ada lisensi, hak cipta, batasan paywall, atau larangan reproduksi yang berlaku pada materi yang akan dikumpulkan?
+5. Sensitivitas dan Mitigasi Bahaya: Apakah topik riset atau kelompok partisipan membawa risiko psikologis, sosial, hukum, atau reputasi bagi partisipan maupun peneliti sendiri?
+6. Kualitas dan Kredibilitas Sumber: Apakah materi data yang direncanakan memiliki keandalan dan otoritas yang cukup untuk menopang klaim temuan tesis?
+7. Kebutuhan Persetujuan Institusional: Aspek mana yang memerlukan persetujuan formal dari Komite Etik Penelitian atau pejabat berwenang di kampus?
+8. Kecocokan Ilmiah (Fit): Apakah materi data ini benar-benar mampu menjawab pertanyaan penelitian secara tuntas?
+
+Untuk setiap dimensi, sebutkan: potensi risiko, tingkat kemungkinan terjadinya, dan strategi mitigasi praktisnya. Kelompokkan menjadi: Wajib Diselesaikan Sebelum Mulai, Dipantau Selama Proses, atau Diakui sebagai Keterbatasan Studi.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengonfirmasi bahwa riset sudah pasti patuh secara hukum—itu wewenang komisi etik kampus. Nyatakan informasi apa yang masih kurang jika ada aspek yang belum jelas.]]></field>
+            <field name="output_target"><![CDATA[Daftar prioritas risiko penelitian yang memisahkan syarat mutlak sebelum ke Langkah 2 dengan hal-hal yang dapat dikelola sambil jalan.]]></field>
+        </record>
+
+        <record id="prompt_a_4_7_6" model="thesis.prompt.library">
+            <field name="code">A.4.7.6</field>
+            <field name="name">Pemeriksaan Keselarasan Instrumen dan Kriteria (Jenjang S1 dan S2/S3—Dapat Diulang)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi]
+Konsep kunci yang harus dicakup: [masukkan konsep kunci]
+Pedoman wawancara, instrumen survei, protokol observasi, atau kriteria seleksi sumber saat ini: [masukkan draf instrumen]
+
+Lakukan pemeriksaan keselarasan (alignment check) kritis antara instrumen penelitian dengan rumusan masalah dan konsep kunci. Laporkan hasil evaluasi untuk setiap kriteria berikut secara terpisah:
+
+1. Cakupan (Coverage): Konsep mana yang sudah terwakili dengan baik, dan konsep mana yang belum terjangkau oleh butir pertanyaan atau kriteria seleksi yang ada?
+2. Redundansi (Redundancy): Butir pertanyaan atau kriteria mana yang tidak berkontribusi pada pencapaian tujuan penelitian dan sebaiknya dihapus untuk menghemat beban responden?
+3. Netralitas (Neutrality): Pertanyaan mana yang bersifat mengarahkan (leading), memuat asumsi tersembunyi (presupposition), atau bias? Apakah ada kriteria yang secara sistematis memihak pada temuan tertentu?
+4. Keterterapan (Applicability): Apakah instrumen atau kriteria ini dapat diterapkan oleh peneliti lain, atau dijawab oleh responden secara konsisten dan reliabel?
+5. Proporsi (Proportion): Apakah panjang instrumen atau ukuran korpus sebanding dan realistis untuk jenjang studi dan batas waktu yang tersedia?
+
+Nyatakan status keterkaitan untuk setiap konsep: Kuat, Lemah, atau Terputus. Identifikasi titik terlemah instrumen dan berikan saran perbaikan konkret tanpa memperluas beban penelitian.
+
+Batasan Etis dan Metodologis: Bekerjalah hanya dari materi yang telah saya berikan. Jangan menambahkan konsep atau variabel baru tanpa dasar. Jangan memasukkan data pribadi partisipan asli ke dalam prompt ini—pemeriksaan ini ditujukan untuk struktur instrumen, bukan data hasil riset.
+
+Format Luaran: Penilaian per dimensi, identifikasi titik paling rentan, dan rekomendasi revisi instrumen.]]></field>
+            <field name="output_target"><![CDATA[Alat diagnostik ringkas yang dapat dijalankan ulang setiap kali instrumen atau pertanyaan penelitian mengalami penyesuaian.]]></field>
+        </record>
+
+        <record id="prompt_a_4_8_1" model="thesis.prompt.library">
+            <field name="code">A.4.8.1</field>
+            <field name="name">Kumpulan Prompt: Tinjauan Pengumpulan Data (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_a</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Kumpulan Prompt: Tinjauan Pengumpulan Data (Jenjang Sarjana S1 dan Pascasarjana S2/S3)
+
+1. Pemeriksaan Kelengkapan Data (Completeness Check):
+Tinjau rencana pengumpulan data dan ringkasan materi/data yang telah terkumpul berikut: [masukkan ringkasan].
+Instruksi: Identifikasi setiap kesenjangan, inkonsistensi, atau elemen data yang masih kurang; evaluasi apakah data mencukupi untuk menjawab pertanyaan penelitian; soroti aspek yang kurang terjustifikasi; dan berikan saran perbaikan konkret sebelum melangkah ke tahap analisis.
+
+2. Tinjauan Etika Penelitian (Ethical Overview):
+Berdasarkan metode pengumpulan data berikut: [masukkan metode].
+Instruksi: Identifikasi isu etis kunci yang wajib diperiksa ulang sebelum analisis: persetujuan sukarela (informed consent), anonimitas dan kerahasiaan, penyimpanan dan perlindungan data (misalnya GDPR), relasi kuasa antara peneliti dan subjek, kerentanan partisipan, hak cipta/izin sumber, serta penggunaan AI Generatif yang bertanggung jawab. Tandai area berisiko tinggi dan berikan langkah pencegahannya.
+
+3. Audit Dokumentasi Materi dan Data Riset (Documentation Audit):
+Instruksi: Susun daftar periksa (checklist) praktis untuk memastikan data empiris, dokumen, bahan hukum, atau studi kasus terdokumentasi dengan rapi, dianonimkan/disamarkan secara konsisten, disimpan secara aman, dan terorganisasi untuk analisis. Cakup konvensi penamaan berkas, metadata (tanggal, konteks, versi), kontrol akses, dan pencatatan keputusan seleksi data.
+
+4. Penilaian Risiko Metodologis dan Praktis (Risk Assessment):
+Berdasarkan proses pengumpulan data berikut: [masukkan ringkasan proses].
+Instruksi: Identifikasi potensi risiko metodologis (bias sampling, seleksi sumber yang sempit), risiko etis (privasi, batas consent), dan risiko praktis (keterbatasan waktu, kerusakan dokumen). Jelaskan dampaknya terhadap validitas dan reliabilitas studi, serta rumuskan strategi mitigasi yang realistis.
+
+5. Tinjauan Refleksif (Reflexive Review):
+Evaluasi secara kritis proses pengumpulan materi/data berikut: [tempelkan ringkasan di sini].
+Instruksi: Identifikasi potensi bias yang masuk selama pengumpulan data, asumsi tersembunyi dalam pendekatan atau pemilihan sumber, perspektif atau suara kelompok yang terabaikan, serta bagaimana batasan data tersebut membentuk arah analisis dan kesimpulan tesis. Berikan saran cara mengakui keterbatasan ini secara jujur dalam naskah tesis.]]></field>
+        </record>
+
+    </data>
+</odoo>

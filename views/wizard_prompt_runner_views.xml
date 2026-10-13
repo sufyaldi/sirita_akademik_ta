@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_wizard_prompt_runner_form" model="ir.ui.view">
+        <field name="name">wizard.prompt.runner.form</field>
+        <field name="model">wizard.prompt.runner</field>
+        <field name="arch" type="xml">
+            <form string="Asisten Pembuat Prompt Akademik Terbimbing">
+                <sheet>
+                    <div class="oe_title">
+                        <h2>
+                            <span class="text-primary"><i class="fa fa-graduation-cap me-2"/>Asisten Riset AI Akademik</span>
+                        </h2>
+                        <p class="text-muted">
+                            Pilih aktivitas metodologis dari buku Model Tiga Langkah, lengkapi parameter slot penelitian Anda, dan jalankan bersama AI Copilot.
+                        </p>
+                    </div>
+
+                    <group>
+                        <group string="1. Sasaran Proyek &amp; Aktivitas">
+                            <field name="project_id" options="{'no_create': True}"/>
+                            <field name="prompt_id" options="{'no_create': True}" placeholder="Ketik kode (misal A.4.1.1) atau nama aktivitas..."/>
+                            <field name="prompt_code" invisible="not prompt_id"/>
+                            <field name="appendix_source" invisible="not prompt_id"/>
+                            <field name="target_degree" invisible="not prompt_id"/>
+                        </group>
+                    </group>
+
+                    <notebook invisible="not prompt_id">
+                        <page string="2. Parameter Konteks Penelitian (Slot-Filling)">
+                            <group>
+                                <field name="topic" placeholder="Bidang kajian spesifik yang ingin diteliti..."/>
+                                <field name="available_time" placeholder="Misal: 6 Bulan / 1 Semester..."/>
+                                <field name="data_access" placeholder="Data sekunder/primer yang dapat Anda akses secara nyata..." widget="text"/>
+                                <field name="theoretical_angle" placeholder="Teori acuan, konsep dasar, atau perspektif analisis..."/>
+                                <field name="method_preference" placeholder="Metode/desain yang direncanakan (kualitatif, kuantitatif, komparasi)..."/>
+                                <field name="additional_notes" placeholder="Konteks lokal atau batasan objek riset..." widget="text"/>
+                            </group>
+                        </page>
+                        <page string="3. Pratinjau Prompt Baku &amp; Batasan Etik">
+                            <field name="preview_prompt" widget="text" readonly="1" placeholder="Pratinjau otomatis akan terisi saat parameter dimasukkan..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button name="action_generate_and_execute"
+                            string="Kompilasi &amp; Jalankan Bersama SIRITA AI"
+                            type="object"
+                            class="btn-primary"
+                            invisible="not prompt_id"/>
+                    <button string="Batal" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action Wizard -->
+    <record id="action_wizard_prompt_runner" model="ir.actions.act_window">
+        <field name="name">Jalankan Asisten AI Riset</field>
+        <field name="res_model">wizard.prompt.runner</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

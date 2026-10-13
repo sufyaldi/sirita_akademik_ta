@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="prompt_d_8_5_1" model="thesis.prompt.library">
+            <field name="code">D.8.5.1</field>
+            <field name="name">Mempersempit Topik Penelitian (Topic Narrowing)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bertindaklah sebagai konsultan perencanaan tugas akhir akademik. Saya sedang mempersiapkan [skripsi Sarjana S1 / tesis Magister S2] di bidang [nama disiplin ilmu/program studi]. Topik umum yang saya minati adalah [masukkan topik luas]. Bantulah saya mempersempit topik ini menjadi tiga opsi topik tugas akhir yang realistis dan layak dilaksanakan, lengkap dengan kemungkinan pertanyaan penelitian, materi/data yang dibutuhkan, metode analisis, dan risiko utamanya.]]></field>
+        </record>
+
+        <record id="prompt_d_8_5_2" model="thesis.prompt.library">
+            <field name="code">D.8.5.2</field>
+            <field name="name">Pemeriksaan Kelayakan Desain Riset (Feasibility Check)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Evaluasilah kelayakan topik tugas akhir berikut: [masukkan draf topik atau judul]. Pertimbangkan ruang lingkup kajian, ketersediaan materi/data pendukung, kemungkinan metode yang sesuai, potensi hambatan etika, risiko kendala terbesar, dan cara menyederhanakannya agar realistis diselesaikan dalam batas waktu [masukkan alokasi waktu pengerjaan].]]></field>
+        </record>
+
+        <record id="prompt_d_8_5_3" model="thesis.prompt.library">
+            <field name="code">D.8.5.3</field>
+            <field name="name">Matriks Perbandingan Alternatif Topik (Topic Comparison)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bantulah saya membandingkan beberapa opsi topik tugas akhir berikut menggunakan tabel komparatif dengan kolom: Topik Penelitian, Kemungkinan Pertanyaan Penelitian, Metode Analisis, Kebutuhan Materi/Data, Unsur Kebaruan (Novelitas), Kelayakan Pelaksanaan, Risiko Etis, dan Opsi Penyederhanaan Utama: [masukkan daftar opsi topik].]]></field>
+        </record>
+
+        <record id="prompt_d_8_5_4" model="thesis.prompt.library">
+            <field name="code">D.8.5.4</field>
+            <field name="name">Penyempurnaan Rumusan Pertanyaan Penelitian (Research Question Improvement)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Sempurnakanlah draf pertanyaan penelitian berikut untuk [skripsi Sarjana S1 / tesis Magister S2]. Buatlah rumusan menjadi lebih jelas, fokus, dapat dijawab secara empiris/teoretis, dan selaras dengan materi serta metode yang dapat diakses: [masukkan draf pertanyaan penelitian].]]></field>
+        </record>
+
+        <record id="prompt_d_8_5_5" model="thesis.prompt.library">
+            <field name="code">D.8.5.5</field>
+            <field name="name">Persiapan Pertemuan Bimbingan Tugas Akhir (Supervisor Meeting Preparation)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bantulah saya mempersiapkan sesi bimbingan dengan dosen pembimbing mengenai topik tugas akhir saya. Susunlah agenda pertemuan yang ringkas dan terarah, poin keputusan kunci yang perlu saya sepakati dengan pembimbing, daftar pertanyaan kritis yang harus saya tanyakan, serta materi atau draf ringkas yang wajib saya bawa ke sesi bimbingan.]]></field>
+        </record>
+
+        <record id="prompt_d_8_5_6" model="thesis.prompt.library">
+            <field name="code">D.8.5.6</field>
+            <field name="name">Rencana Penggunaan AI Generatif yang Bertanggung Jawab (Responsible AI Use Plan)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bantulah saya menyusun rencana penggunaan AI generatif yang bertanggung jawab dan etis untuk proses pengerjaan tugas akhir saya. Rincikan bentuk penggunaan yang tepat, bentuk penggunaan yang wajib dihindari, perhatian terhadap privasi data penelitian, praktik verifikasi mandiri terhadap fakta ilmiah, serta draf pernyataan pengungkapan transparansi yang ringkas untuk naskah saya.]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_1" model="thesis.prompt.library">
+            <field name="code">D.9.7.1</field>
+            <field name="name">Perancangan Kerangka Bab Terperinci (Chapter Outline)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bertindaklah sebagai konsultan penulisan tugas akhir ilmiah. Saya sedang menulis [skripsi Sarjana S1 / tesis Magister S2] di bidang [nama disiplin ilmu]. Pertanyaan penelitian saya adalah [masukkan pertanyaan penelitian] dan kerangka teoretis yang saya gunakan adalah [masukkan teori atau nyatakan ``belum didefinisikan secara spesifik'']. Bantulah saya mengembangkan kerangka kerja terperinci untuk bab [Tinjauan Pustaka / Metodologi / Temuan dan Analisis / Pembahasan], lengkap dengan judul subbab serta 2-3 poin penjelasan isi untuk masing-masing bagian.]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_2" model="thesis.prompt.library">
+            <field name="code">D.9.7.2</field>
+            <field name="name">Evaluasi Diagnostik Draf Bab (Draft Section Feedback)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjaulah draf naskah berikut dari bab [sebutkan nama bab]. Lakukan diagnosis mendalam terhadap masalah struktural utama sebelum memberikan saran revisi. Fokuskan evaluasi pada kejelasan argumen, keterkaitan dengan pertanyaan penelitian, kekuatan bukti pendukung, alur antarsubbab, dan nada akademis. Jangan menulis ulang bagian ini secara utuh; identifikasi kelemahannya dan berikan saran perbaikan konkret: [tempelkan draf teks naskah].]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_3" model="thesis.prompt.library">
+            <field name="code">D.9.7.3</field>
+            <field name="name">Sintesis Literatur dari Sumber yang Disediakan (Literature Synthesis)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan semata-mata pada sumber pustaka yang saya sediakan di bawah ini, bantulah saya mensintesis literatur tersebut ke dalam kelompok-kelompok tematik yang koheren. Identifikasikan titik-titik kesepakatan antar-peneliti, perdebatan kritis, dan celah penelitian yang tersisa. Dilarang mengarang sumber baru atau menambahkan rujukan yang tidak saya sertakan: [tempelkan catatan ringkasan artikel, abstrak, atau kutipan sumber].]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_4" model="thesis.prompt.library">
+            <field name="code">D.9.7.4</field>
+            <field name="name">Penguatan Struktur Argumen Analitis (Argument Strengthening)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjaulah paragraf atau draf naskah berikut. Identifikasikan bagian mana dari argumen yang masih lemah, belum didukung bukti data yang memadai, atau kurang jelas penjelasannya. Berikan saran bagaimana memperkuat pola Klaim-Bukti-Interpretasi tanpa mengubah gagasan pokok pemikiran saya: [tempelkan draf teks].]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_5" model="thesis.prompt.library">
+            <field name="code">D.9.7.5</field>
+            <field name="name">Pengembangan Bab Pembahasan Temuan (Discussion Chapter Development)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Temuan penelitian tugas akhir saya adalah sebagai berikut: [tempelkan ringkasan temuan data]. Kerangka teori yang saya gunakan adalah [nama teori]. Bantulah saya merancang struktur penulisan bab pembahasan (diskusi). Identifikasikan bagaimana temuan data saya berdialog dengan teori dan studi terdahulu yang telah saya sediakan. Dilarang menciptakan rujukan fiktif.]]></field>
+        </record>
+
+        <record id="prompt_d_9_7_6" model="thesis.prompt.library">
+            <field name="code">D.9.7.6</field>
+            <field name="name">Penyuntingan Gaya Bahasa Akademis (Academic Style Revision)</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Suntinglah petikan naskah berikut untuk meningkatkan kejelasan akademis, keringkasan kalimat, dan ketepatan nada formalitas ilmiah. Pertahankan sepenuhnya makna asli, argumen penelitian, dan suara kepengarangan saya. Jangan menambahkan klaim baru, sumber rujukan baru, atau interpretasi spekulatif. Berikan tanda khusus pada kalimat yang maknanya ambigu atau tidak jelas: [tempelkan kutipan teks].]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_1" model="thesis.prompt.library">
+            <field name="code">D.10.8.1</field>
+            <field name="name">Konversi Umpan Balik Pembimbing Menjadi Rencana Aksi</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Dosen pembimbing saya memberikan catatan revisi berikut: [tempelkan catatan bimbingan]. Bantulah saya mengonversinya menjadi rencana aksi revisi berprioritas. Klasifikasikan setiap catatan ke dalam: wajib diperbaiki (must fix), sebaiknya diperbaiki (should fix), atau opsional (could fix). Sarankan urutan pengerjaan yang logis serta daftar pertanyaan klarifikasi yang perlu saya sampaikan kepada pembimbing sebelum memulai.]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_2" model="thesis.prompt.library">
+            <field name="code">D.10.8.2</field>
+            <field name="name">Pemeriksaan Koherensi Naskah Menyeluruh</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjaulah ringkasan tugas akhir saya berikut dan identifikasikan di bagian mana benang merah argumen terputus atau bab-bab yang tidak selaras. Gunakan matriks evaluasi koherensi menyeluruh. Judul tugas akhir: [masukkan judul]. Pertanyaan penelitian: [masukkan pertanyaan]. Ringkasan masing-masing bab (satu paragraf per bab): [tempelkan ringkasan].]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_3" model="thesis.prompt.library">
+            <field name="code">D.10.8.3</field>
+            <field name="name">Penyelarasan Pertanyaan Penelitian dengan Kesimpulan</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Periksalah apakah bab kesimpulan saya benar-benar menjawab pertanyaan penelitian secara tegas tanpa menghadirkan bukti baru. Gunakan tabel penyelarasan pertanyaan-kesimpulan. Pertanyaan penelitian: [masukkan pertanyaan]. Teks bab kesimpulan: [tempelkan draf kesimpulan].]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_4" model="thesis.prompt.library">
+            <field name="code">D.10.8.4</field>
+            <field name="name">Audit Risiko Sitasi dan Daftar Pustaka</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjaulah sitasi dalam teks dan daftar pustaka saya berikut untuk mendeteksi ketidakcocokan, entri yang hilang, rincian bibliografi yang tidak lengkap, atau rujukan yang meragukan. Dilarang mengarang rincian yang hilang. Tandai semua poin yang wajib saya verifikasi secara manual: [tempelkan daftar pustaka dan sampel sitasi teks].]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_5" model="thesis.prompt.library">
+            <field name="code">D.10.8.5</field>
+            <field name="name">Paket Persiapan dan Simulasi Sidang Tugas Akhir</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bantulah saya mempersiapkan diri menghadapi sidang ujian tugas akhir. Susunlah ringkasan presentasi 2 menit, pernyataan kontribusi inti, daftar 8-10 pertanyaan sidang yang paling mungkin ditanyakan penguji beserta catatan poin jawabannya, argumen pembelaan metodologi, serta strategi menjawab pertanyaan yang sulit/kritis. Judul tugas akhir: [masukkan judul]. Pertanyaan penelitian: [masukkan pertanyaan]. Temuan utama: [masukkan temuan]. Metode: [masukkan metode]. Keterbatasan utama: [masukkan keterbatasan].]]></field>
+        </record>
+
+        <record id="prompt_d_10_8_6" model="thesis.prompt.library">
+            <field name="code">D.10.8.6</field>
+            <field name="name">Evaluasi Menjelang Pengumpulan Berdasarkan Daftar Periksa Final</field>
+            <field name="appendix_source">appendix_d</field>
+            <field name="target_degree">all</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjaulah naskah tugas akhir saya terhadap daftar periksa revisi final. Untuk setiap dimensi (argumen dan struktur, bukti dan sumber data, metodologi dan etika, gaya bahasa dan format, serta transparansi GenAI), identifikasikan tiga aspek paling mendesak yang masih memerlukan perhatian sebelum naskah dikumpulkan: [tempelkan draf tugas akhir atau bab terkait].]]></field>
+        </record>
+
+    </data>
+</odoo>

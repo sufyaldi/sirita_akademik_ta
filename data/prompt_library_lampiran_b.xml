@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="prompt_b_5_1_1" model="thesis.prompt.library">
+            <field name="code">B.5.1.1</field>
+            <field name="name">Mengumpulkan, Memilih, dan Mengorganisasi Materi Riset (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan pertanyaan penelitian, kerangka teoretis, metode, dan rencana materi riset saya: [tempelkan di sini]
+
+Rancang prosedur kerja yang sistematis untuk mengumpulkan, memilih, dan mengorganisasi materi penelitian saya untuk jenjang Sarjana (S1).
+
+Petunjuk operasional:
+
+    - Spesifikasi Kebutuhan Materi: Tetapkan jenis data apa yang dibutuhkan (misalnya teks, dokumen, hasil wawancara, catatan observasi, atau dataset) dan perkiraan volume minimal yang mencukupi;
+    - Prosedur Seleksi dan Pembatasan: Uraikan logika seleksi sumber, teknik penarikan sampel, atau kriteria pembatasan korpus yang jelas;
+    - Langkah Kerja Kronologis: Susun urutan langkah pengumpulan data dari persiapan hingga penutupan lapangan;
+    - Sistem Pengorganisasian: Jelaskan bagaimana data mentah akan diberi kode identitas, disimpan, dan ditata agar siap dianalisis;
+    - Antisipasi Kendala: Identifikasi potensi hambatan perizinan atau kelangkaan materi dan siapkan strategi mitigasinya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengasumsikan ketersediaan data yang belum saya miliki. Fokuslah pada persiapan materi, bukan rincian analisis data.]]></field>
+            <field name="output_target"><![CDATA[Rencana kerja penyiapan dan pengelolaan materi riset yang terstruktur dan mudah diikuti.]]></field>
+        </record>
+
+        <record id="prompt_b_5_1_2" model="thesis.prompt.library">
+            <field name="code">B.5.1.2</field>
+            <field name="name">Mengumpulkan, Memilih, dan Mengorganisasi Materi Riset (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan desain penelitian jenjang Magister (S2) saya:
+Pertanyaan penelitian, tujuan, atau rumusan masalah: [masukkan informasi],
+Kerangka teoretis atau konseptual: [masukkan informasi],
+Pendekatan metodologis: [masukkan informasi],
+Rencana materi riset: [masukkan informasi].
+
+Rancang strategi komprehensif untuk pengumpulan, penyeleksian, pengorganisasian, dan dokumentasi korpus materi riset.
+
+Prosedur harus menetapkan:
+
+    - Justifikasi Metodologis Korpus: Logika penarikan sampel teoretis (theoretical sampling), pemilihan kasus representatif/kritis, atau delimitasi korpus dokumen yang memenuhi standar ketelitian pascasarjana;
+    - Protokol Penangkapan Data: Prosedur baku pencatatan data lapangan, transkripsi, verifikasi keaslian naskah arsip, atau pembersihan data numerik;
+    - Skema Metadata dan Pengindeksan: Sistem pelabelan metadata (tanggal, konteks, sumber otoritatif, hak akses, dan versi berkas) yang menjamin keterlacakan (traceability);
+    - Tata Kelola Risiko Etik dan Regulasi: Prosedur formal kepatuhan perlindungan data pribadi (UU PDP/GDPR), kerahasiaan narasumber, dan mitigasi bias peneliti.]]></field>
+            <field name="constraints"><![CDATA[Hindari generalisasi umum; berikan prosedur yang presisi sesuai karakter disiplin ilmu saya.]]></field>
+            <field name="output_target"><![CDATA[Blueprint protokol pengelolaan materi penelitian yang siap diaudit secara metodologis.]]></field>
+        </record>
+
+        <record id="prompt_b_5_1_3" model="thesis.prompt.library">
+            <field name="code">B.5.1.3</field>
+            <field name="name">Daftar Periksa (Checklist) Dokumentasi Materi Riset (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan materi riset dan rencana kerja saya: [tempelkan di sini]
+
+Susun daftar periksa (checklist) dokumentasi materi riset yang praktis dan terperinci untuk memastikan seluruh data penelitian terkelola dengan tertib.
+
+Daftar periksa harus memuat:
+
+    - Konvensi Penamaan Berkas: Aturan format penamaan file yang konsisten dan informatif (misalnya tanggal\_jenisData\_namaSumber\_versi);
+    - Pencatatan Metadata: Informasi penting yang wajib dicatat untuk setiap berkas (waktu perekaman/pengambilan, kondisi konteks, nomor identitas sumber, dan ringkasan isi);
+    - Prosedur Anonimisasi / Penyamaran Identitas: Langkah penghapusan atau penggantian nama asli dan penanda identitas pribadi partisipan dengan kode anonim;
+    - Keamanan dan Salinan Cadangan (Backup): Tata cara penyimpanan lokal terenkripsi, penyimpanan komputasi awan yang diizinkan kampus, dan strategi pencadangan 3-2-1;
+    - Buku Catatan Penelitian (Research Log): Format pencatatan kronologis keputusan metodologis dan perubahan kriteria selama di lapangan.]]></field>
+            <field name="constraints"><![CDATA[Susun daftar periksa yang realistis untuk dikerjakan mandiri oleh seorang mahasiswa tesis.]]></field>
+            <field name="output_target"><![CDATA[Lembar checklist dokumentasi data riset yang siap digunakan sepanjang proses penelitian.]]></field>
+        </record>
+
+        <record id="prompt_b_5_1_4" model="thesis.prompt.library">
+            <field name="code">B.5.1.4</field>
+            <field name="name">Pemeriksaan Kesiapan Materi Riset (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjau kesiapan materi penelitian saya di bawah ini:
+Ringkasan pertanyaan riset: [masukkan informasi],
+Ringkasan data/materi yang terkumpul saat ini: [tempelkan ringkasan data di sini].
+
+Lakukan audit kesiapan materi (readiness check) sebelum saya memulai tahap analisis data:
+
+    - Kecukupan Data (Sufficiency): Apakah volume dan variasi data yang terkumpul sudah mencukupi untuk menjawab pertanyaan penelitian secara meyakinkan, ataukah masih terdapat titik buta yang membutuhkan data tambahan?
+    - Kualitas dan Keterbacaan: Apakah data mentah (rekaman, catatan lapangan, teks arsip, tabel) berada dalam kondisi bersih, dapat dibaca dengan jelas, dan bebas dari ambiguitas teknis?
+    - Konsistensi Format: Apakah seluruh berkas telah ditata dalam struktur dan format seragam yang memudahkan proses pengodean atau kalkulasi?
+    - Kepatuhan Etika: Apakah bukti persetujuan (informed consent) telah lengkap dan prosedur penyamaran identitas telah tuntas dilakukan?
+
+
+Berikan kesimpulan status: Siap Dianalisis, Perlu Penyempurnaan Minor, atau Belum Siap (Perlu Tambahan Data), disertai rekomendasi perbaikan prioritas.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengabaikan kekurangan data demi kepraktisan semata.]]></field>
+            <field name="output_target"><![CDATA[Laporan audit kesiapan materi yang menghindarkan kebuntuan saat analisis dimulai.]]></field>
+        </record>
+
+        <record id="prompt_b_5_2_1" model="thesis.prompt.library">
+            <field name="code">B.5.2.1</field>
+            <field name="name">Memfinalisasi Bagian Metode dan Landasan Etis (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan desain penelitian dan materi skripsi saya:
+Pertanyaan penelitian: [masukkan informasi],
+Pendekatan analitis / metode: [masukkan informasi],
+Karakter materi data: [masukkan informasi],
+Draf bagian metode saat ini: [tempelkan draf jika ada].
+
+Bantu saya memfinalisasi penulisan bab metodologi penelitian dan landasan etis untuk skripsi jenjang Sarjana (S1).
+
+Susun draf paragraf naratif yang runtut dan mengalir mencakup:
+
+    - Penjelasan jenis dan desain penelitian yang dipilih serta alasan pemilihannya;
+    - Deskripsi sumber materi atau subjek penelitian serta alasan pembatasan ruang lingkupnya;
+    - Tahapan pengumpulan data yang dilakukan secara kronologis;
+    - Teknik analisis data yang diterapkan secara prosedural;
+    - Pernyataan kepatuhan etis (kesukarelaan partisipan, perlindungan kerahasiaan identitas, dan kejujuran ilmiah).]]></field>
+            <field name="constraints"><![CDATA[Gunakan gaya bahasa akademik yang lugas dan objektif. Hindari penjelasan teoritis berulang tentang definisi kamus dari kata "metodologi".]]></field>
+            <field name="output_target"><![CDATA[Draf final bab metodologi yang utuh, profesional, dan siap dikonsultasikan dengan pembimbing.]]></field>
+        </record>
+
+        <record id="prompt_b_5_2_2" model="thesis.prompt.library">
+            <field name="code">B.5.2.2</field>
+            <field name="name">Memfinalisasi Bagian Metode dan Landasan Etis (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan penelitian jenjang Magister (S2) saya:
+Pertanyaan riset dan kerangka teoretis: [masukkan informasi],
+Korpus data dan prosedur analisis: [masukkan informasi],
+Draf bab metodologi saat ini: [tempelkan draf].
+
+Bantu memfinalisasi penulisan bab metodologi, pendekatan analitis, dan landasan etika tingkat lanjut.
+
+Naskah harus menyajikan argumentasi metodologis yang mendalam meliputi:
+
+    - Justifikasi Epistemologis: Argumentasi filosofis mengapa pendekatan ini paling absah untuk membedah masalah penelitian;
+    - Operasionalisasi Analitis yang Presisi: Langkah-langkah analitis terperinci (bagaimana kode dibangun, bagaimana tema diuji, atau bagaimana model statistik dispesifikasi);
+    - Kredibilitas dan Ketelitian (Rigour): Penerapan teknik penjaminan keabsahan temuan (triangulasi, reflektivitas peneliti, peer debriefing, atau uji ketahanan data);
+    - Tata Kelola Etika dan Risiko Regulasi: Uraian kepatuhan protokol etik formal, perizinan institusional, dan pengelolaan data sensitif.]]></field>
+            <field name="constraints"><![CDATA[Pertahankan standar kedalaman akademik jenjang Magister; pastikan seluruh pilihan metodologis memiliki rujukan literatur metodologi mutakhir.]]></field>
+            <field name="output_target"><![CDATA[Naskah bab metodologi tingkat lanjut yang memiliki daya pertahanan ilmiah tinggi di hadapan dewan penguji.]]></field>
+        </record>
+
+        <record id="prompt_b_5_3_1" model="thesis.prompt.library">
+            <field name="code">B.5.3.1</field>
+            <field name="name">Memulai Analisis atau Interpretasi Awal (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi],
+Metode dan prosedur analisis: [masukkan informasi],
+Draf bab metodologi: [tempelkan teks di sini].
+
+Lakukan evaluasi konsistensi metodologis dan keterlacakan (traceability check) terhadap naskah metodologi ini.
+
+Periksa empat pilar keandalan:
+
+    - Rantai Bukti yang Dapat Direplikasi: Apakah prosedur yang ditulis cukup rinci sehingga peneliti independen dapat mengulang langkah penelitian dengan hasil serupa?
+    - Konsistensi Terminologi: Apakah istilah-istilah analitis (kode, kategori, tema, variabel, dimensi) digunakan secara taat asas di seluruh bagian?
+    - Ketepatan Justifikasi: Apakah setiap pilihan instrumen dan teknik telah didukung oleh alasan ilmiah yang masuk akal, ataukah ada keputusan yang terkesan arbitrer/tanpa penjelasan?
+    - Keterhubungan dengan Masalah Riset: Apakah ada prosedur analitis yang dijelaskan secara panjang lebar namun sebenarnya tidak dibutuhkan untuk menjawab rumusan masalah?
+
+
+Laporkan kelemahan yang ditemukan dan berikan rekomendasi perbaikan kalimatnya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah substansi metode asli peneliti.]]></field>
+            <field name="output_target"><![CDATA[Evaluasi diagnostik yang mempertajam keterlacakan dan integritas bab metodologi.]]></field>
+        </record>
+
+        <record id="prompt_b_5_3_2" model="thesis.prompt.library">
+            <field name="code">B.5.3.2</field>
+            <field name="name">Pengodean, Kategorisasi, atau Analisis Deskriptif (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi],
+Kerangka teoretis / konsep kunci: [masukkan informasi],
+Sampel data atau petikan teks awal: [tempelkan petikan data di sini].
+
+Bantu saya memulai tahap analisis data awal (initiating analysis) untuk skripsi jenjang Sarjana (S1).
+
+Pandu langkah-langkah analitis berikut:
+
+    - Pembacaan Mendalam dan Intisari: Identifikasi poin-poin pokok atau impresi analitis awal yang tampak jelas dari petikan data tersebut;
+    - Pengelompokan Awal: Hubungkan petikan data tersebut dengan konsep-konsep kunci dalam pertanyaan penelitian;
+    - Pengajuan Pertanyaan Kritis: Ajukan 2–3 pertanyaan reflektif untuk memancing interpretasi yang lebih dalam (tidak sekadar merangkum perkataan narasumber atau teks);
+    - Draf Paragraf Analisis Awal: Contohkan cara menyusun satu paragraf analisis tematik yang memadukan bukti kutipan data dengan interpretasi penjelasan.]]></field>
+            <field name="constraints"><![CDATA[Jangan menggantikan interpretasi orisinal peneliti dengan interpretasi AI; jadikan respons sebagai pemantik pemikiran kritis.]]></field>
+            <field name="output_target"><![CDATA[Panduan memulai analisis yang mengubah data mentah menjadi narasi temuan yang berbobot.]]></field>
+        </record>
+
+        <record id="prompt_b_5_4_1" model="thesis.prompt.library">
+            <field name="code">B.5.4.1</field>
+            <field name="name">Analisis Menengah atau Progresi Argumen (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan riset dan kerangka teoretis: [masukkan informasi],
+Materi teks / petikan data lapangan: [tempelkan data di sini],
+Pendekatan pengodean yang diinginkan: [induktif / deduktif / hibrida].
+
+Bantu proses pengodean sistematis, kategorisasi analitis, atau analisis deskriptif untuk tesis jenjang Magister (S2).
+
+Lakukan tahapan analitis berikut:
+
+    - Ekstraksi Kode Awal (Initial Coding): Identifikasi unit makna penting dari teks dan usulkan label kode yang padat makna serta berakar pada data;
+    - Kategorisasi Analitis (Axial / Pattern Coding): Kelompokkan kode-kode awal tersebut ke dalam kategori-kategori yang lebih tinggi tingkat abstraksinya;
+    - Hubungan Antar-Kategori: Petakan bagaimana kategori-kategori tersebut saling berhubungan dan bagaimana kaitannya dengan kerangka teoretis penelitian;
+    - Tabel Buku Kode (Codebook): Sajikan buku kode terstruktur yang memuat nama kode, definisi operasional, kriteria penerapan, dan contoh kutipan ilustratif.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengarang kutipan yang tidak ada di dalam teks sumber; pertahankan kesetiaan penuh pada data mentah.]]></field>
+            <field name="output_target"><![CDATA[Buku kode dan skema kategorisasi yang terorganisasi secara ketat untuk tahap analisis lanjutan.]]></field>
+        </record>
+
+        <record id="prompt_b_5_4_2" model="thesis.prompt.library">
+            <field name="code">B.5.4.2</field>
+            <field name="name">Analisis Tematik Rinci, Tekstual, Statistik, atau Hukum (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Klaim temuan sementara saya: [masukkan klaim],
+Bukti data empiris yang digunakan: [masukkan bukti data],
+Pertanyaan penelitian: [masukkan pertanyaan].
+
+Lakukan uji validitas dan ketepatan analitis (soundness check) terhadap klaim temuan ini:
+
+    - Kecukupan Bukti (Evidential Adequacy): Apakah bukti data yang diajukan benar-benar menopang klaim tersebut, ataukah interpretasi saya melompat terlalu jauh melampaui apa yang dikatakan oleh data (over-interpretation)?
+    - Penjelasan Tandingan (Counter-Interpretations): Apakah ada kemungkinan interpretasi alternatif atau penjelasan lain yang lebih masuk akal terhadap data yang sama?
+    - Bias Konfirmasi: Apakah ada indikasi bahwa data dipilih hanya yang menguntungkan hipotesis awal (cherry-picking) sambil mengabaikan fakta yang bertentangan?
+    - Kekuatan Inferensi: Seberapa kokoh rantai logika yang menghubungkan bukti empiris dengan kesimpulan analitis?
+
+
+Berikan penilaian ketajaman bukti dan sarankan perbaikan perumusan klaim agar lebih berimbang, objektif, dan terpercaya.]]></field>
+            <field name="constraints"><![CDATA[Bersikaplah kritis dan obyektif demi menjaga ketelitian ilmiah naskah.]]></field>
+            <field name="output_target"><![CDATA[Evaluasi kekokohan bukti temuan yang memperkuat kualitas pembuktian tesis.]]></field>
+        </record>
+
+        <record id="prompt_b_5_5_1" model="thesis.prompt.library">
+            <field name="code">B.5.5.1</field>
+            <field name="name">Mengembangkan Temuan, Hasil, atau Kontribusi Analitis (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi],
+Kategori atau temuan awal yang telah dihasilkan: [masukkan temuan awal],
+Draf paragraf analisis saat ini: [tempelkan draf].
+
+Bantu mengembangkan analisis menengah dan progresi argumentasi untuk skripsi jenjang Sarjana (S1).
+
+Bantu menyusun alur analisis yang mencakup:
+
+    - Menghubungkan temuan-temuan awal menjadi satu kesatuan cerita argumentatif yang berkesinambungan;
+    - Menyusun struktur paragraf analisis berstandar ilmiah: Pernyataan Topik $$ Penyajian Bukti Data/Kutipan $$ Interpretasi Analitis $$ Kaitan dengan Masalah Riset;
+    - Memastikan transisi antar-paragraf berjalan mulus tanpa lompatan logika yang membingungkan pembaca;
+    - Merumuskan rangkuman perantara yang mempertegas apa makna dari temuan-temuan tersebut.]]></field>
+            <field name="constraints"><![CDATA[Pertahankan suara (academic voice) peneliti asli; hindari gaya bahasa yang terkesan seperti artikel populer.]]></field>
+            <field name="output_target"><![CDATA[Draf narasi analisis temuan yang tertata rapi, koheren, dan memiliki progresi argumen yang jelas.]]></field>
+        </record>
+
+        <record id="prompt_b_5_5_2" model="thesis.prompt.library">
+            <field name="code">B.5.5.2</field>
+            <field name="name">Mengembangkan Temuan, Hasil, atau Kontribusi Analitis (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan riset, kerangka teoretis, dan data empiris: [masukkan informasi],
+Draf analisis tematik, tekstual, statistik, atau yuridis: [tempelkan draf teks di sini].
+
+Tingkatkan kedalaman analitis dan ketelitian argumentasi untuk bab temuan tesis jenjang Magister (S2).
+
+Tinjau dan kembangkan aspek-aspek berikut:
+
+    - Eksplanasi Tingkat Lanjut: Tidak sekadar menjelaskan apa yang terjadi, tetapi membedah secara kritis mengapa dan bagaimana fenomena tersebut terjadi berdasarkan kerangka teoretis;
+    - Analisis Nuansa dan Kompleksitas: Eksplorasi ketegangan, paradoks, anomali, atau ambiguitas dalam data yang tidak sesuai dengan pola umum;
+    - Dialog Kritis Lintas Kasus / Teks: Bandingkan berbagai pola data untuk menemukan relasi kausalitas, struktural, atau makna mendalam;
+    - Penajaman Bahasa Akademik: Sempurnakan ketepatan diksi konseptual dan struktur kalimat ilmiah agar mencerminkan kematangan intelektual pascasarjana.]]></field>
+            <field name="constraints"><![CDATA[Jangan menambahkan fakta atau temuan fiktif yang tidak bersumber dari data penelitian.]]></field>
+            <field name="output_target"><![CDATA[Narasi analisis bab temuan yang kaya secara analitis, mendalam, dan memenuhi standar ketat ujian tesis.]]></field>
+        </record>
+
+        <record id="prompt_b_5_5_3" model="thesis.prompt.library">
+            <field name="code">B.5.5.3</field>
+            <field name="name">Pemeriksaan Batasan Temuan dan Klaim (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Klaim temuan kunci dan bukti data saya: [masukkan informasi],
+Pertanyaan penelitian: [masukkan informasi].
+
+Lakukan pemeriksaan kedalaman dan ketelitian analitis (depth and rigour check):
+
+    - Apakah analisis saya sudah menembus lapisan permukaan deskriptif menuju lapisan pemaknaan yang konseptual?
+    - Di mana bagian naskah yang masih terasa seperti "ringkasan cerita lapangan" dan belum menjadi analisis teoretis?
+    - Apakah ada asumsi penting yang diambil begitu saja tanpa pembuktian data yang memadai?
+    - Apakah ada kutipan data yang dibiarkan berdiri sendiri tanpa dianalisis secara tuntas?
+
+
+Tandai bagian-bagian yang dinilai masih dangkal dan berikan rekomendasi paragraf pengembangannya.]]></field>
+            <field name="constraints"><![CDATA[Berikan koreksi yang tegas terhadap analisis yang bersifat deskriptif dangkal.]]></field>
+            <field name="output_target"><![CDATA[Catatan telaah kritis untuk mengangkat mutu analisis menuju standar kesarjanaan yang unggul.]]></field>
+        </record>
+
+        <record id="prompt_b_5_6_1" model="thesis.prompt.library">
+            <field name="code">B.5.6.1</field>
+            <field name="name">Finalisasi Bab Temuan dan Kontribusi Analitis (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan penelitian: [masukkan informasi],
+Kategori temuan utama: [masukkan temuan],
+Bukti data empiris: [masukkan data].
+
+Rancang penyusunan bab temuan dan hasil penelitian untuk skripsi jenjang Sarjana (S1).
+
+Bantu menyusun:
+
+    - Struktur pengorganisasian subbab temuan (misalnya berdasarkan pertanyaan penelitian atau tema kunci);
+    - Deskripsi temuan utama yang jelas, berbasis data, dan terbebas dari spekulasi;
+    - Integrasi tabel, grafik, atau petikan wawancara yang proporsional untuk mengilustrasikan temuan pokok;
+    - Rangkuman sintesis di akhir bab yang menegaskan jawaban terhadap rumusan masalah.]]></field>
+            <field name="constraints"><![CDATA[Pastikan bab hasil berfokus pada pemaparan apa yang ditemukan dari data; simpan diskusi perbandingan dengan literatur eksternal untuk bab pembahasan.]]></field>
+            <field name="output_target"><![CDATA[Rencana bab temuan hasil penelitian yang terstruktur dan mudah dipahami pembimbing.]]></field>
+        </record>
+
+        <record id="prompt_b_5_6_2" model="thesis.prompt.library">
+            <field name="code">B.5.6.2</field>
+            <field name="name">Finalisasi Bab Temuan dan Kontribusi Analitis (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Pertanyaan riset, kerangka teoretis, dan sintesis temuan: [masukkan informasi],
+Draf bab temuan saat ini: [tempelkan draf di sini].
+
+Kembangkan sintesis temuan, konstruksi model analitis, dan artikulasi kontribusi ilmiah untuk tesis jenjang Magister (S2).
+
+Kembangkan bagian yang memuat:
+
+    - Sintesis Temuan Makro: Mengintegrasikan berbagai temuan parsial menjadi proposisi teoretis atau model konseptual baru yang utuh;
+    - Artikulasi Kontribusi Ilmiah: Menjelaskan dengan lugas apa kebaruan (novelty) temuan ini dan bagaimana temuan ini memperkaya atau merevisi literatur yang ada;
+    - Penjelasan Batasan Ruang Lingkup: Menetapkan secara jujur batas keberlakuan temuan berdasarkan konteks sampel dan metode penelitian.]]></field>
+            <field name="constraints"><![CDATA[Hindari klaim kontribusi yang terlalu muluk; rumuskan kontribusi ilmiah secara terukur dan berpijak kuat pada data.]]></field>
+            <field name="output_target"><![CDATA[Bab temuan tingkat lanjut yang mengartikulasikan kontribusi kebaruan penelitian secara meyakinkan.]]></field>
+        </record>
+
+        <record id="prompt_b_5_6_3" model="thesis.prompt.library">
+            <field name="code">B.5.6.3</field>
+            <field name="name">Pemeriksaan Integritas Bab Temuan (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_b</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf lengkap bab temuan penelitian: [tempelkan draf di sini],
+Pertanyaan penelitian: [masukkan pertanyaan].
+
+Lakukan audit integritas bab temuan (chapter integrity check):
+
+    - Apakah setiap pertanyaan penelitian telah terjawab secara tuntas dalam bab temuan ini?
+    - Apakah organisasi subbab mencerminkan pembagian masalah yang logis dan proporsional?
+    - Apakah seluruh kutipan data atau sajian statistik telah dijelaskan fungsinya dan tidak ada data "menggantung"?
+    - Apakah ada inkonsistensi temuan antar bagian yang belum terevaluasi?
+
+
+Sajikan daftar perbaikan prioritas untuk menyempurnakan bab sebelum melangkah ke penulisan bab pembahasan (diskusi).]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah struktur logis naskah tanpa justifikasi yang jelas.]]></field>
+            <field name="output_target"><![CDATA[Laporan pemeriksaan integritas bab temuan yang menjamin kelengkapan dan konsistensi naskah.]]></field>
+        </record>
+
+    </data>
+</odoo>

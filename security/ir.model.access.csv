@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_thesis_stage_all,thesis.stage.all,model_thesis_stage,,1,0,0,0
+access_thesis_stage_admin,thesis.stage.admin,model_thesis_stage,group_thesis_admin,1,1,1,1
+access_thesis_prompt_library_all,thesis.prompt.library.all,model_thesis_prompt_library,,1,0,0,0
+access_thesis_prompt_library_admin,thesis.prompt.library.admin,model_thesis_prompt_library,group_thesis_admin,1,1,1,1
+access_thesis_project_student,thesis.project.student,model_thesis_project,group_thesis_student,1,1,1,0
+access_thesis_project_advisor,thesis.project.advisor,model_thesis_project,group_thesis_advisor,1,1,1,1
+access_thesis_prompt_execution_student,thesis.prompt.execution.student,model_thesis_prompt_execution,group_thesis_student,1,1,1,0
+access_thesis_prompt_execution_advisor,thesis.prompt.execution.advisor,model_thesis_prompt_execution,group_thesis_advisor,1,1,1,1
+access_wizard_prompt_runner_student,wizard.prompt.runner.student,model_wizard_prompt_runner,group_thesis_student,1,1,1,1

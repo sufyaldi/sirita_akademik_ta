@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_thesis_prompt_execution_tree" model="ir.ui.view">
+        <field name="name">thesis.prompt.execution.tree</field>
+        <field name="model">thesis.prompt.execution</field>
+        <field name="arch" type="xml">
+            <list string="Riwayat Interaksi AI">
+                <field name="create_date" string="Tanggal"/>
+                <field name="project_id"/>
+                <field name="student_id"/>
+                <field name="prompt_code"/>
+                <field name="name"/>
+                <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state == 'executed'" decoration-warning="state == 'reviewed'"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_thesis_prompt_execution_form" model="ir.ui.view">
+        <field name="name">thesis.prompt.execution.form</field>
+        <field name="model">thesis.prompt.execution</field>
+        <field name="arch" type="xml">
+            <form string="Audit Log Sesi AI">
+                <header>
+                    <button name="action_execute_ai" string="Jalankan AI via SIRITA AI Core" type="object" class="oe_highlight" invisible="state == 'executed'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,executed,reviewed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <span class="o_form_label">Sesi Eksekusi AI</span>
+                        <h1>
+                            <field name="name" readonly="1"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Informasi Proyek">
+                            <field name="project_id" readonly="state != 'draft'"/>
+                            <field name="student_id"/>
+                        </group>
+                        <group string="Referensi Prompt">
+                            <field name="prompt_id" readonly="state != 'draft'"/>
+                            <field name="prompt_code"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Prompt Terkompilasi">
+                            <field name="compiled_prompt" placeholder="Masukkan atau sesuaikan prompt lengkap di sini..." widget="text"/>
+                        </page>
+                        <page string="Respons AI">
+                            <field name="ai_response" placeholder="Jawaban dari model LLM akan muncul di sini..." widget="text" readonly="1"/>
+                        </page>
+                        <page string="Refleksi Kritis Mahasiswa">
+                            <field name="student_reflection" placeholder="Tuliskan catatan evaluasi kritis Anda terhadap saran AI di atas (mengapa diterima/ditolak/dimodifikasi)..." widget="text"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_thesis_prompt_execution" model="ir.actions.act_window">
+        <field name="name">Riwayat &amp; Audit Log AI</field>
+        <field name="res_model">thesis.prompt.execution</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Belum ada interaksi AI yang terekam.
+            </p>
+        </field>
+    </record>
+</odoo>

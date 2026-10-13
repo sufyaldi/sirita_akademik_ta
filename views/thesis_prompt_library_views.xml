@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="view_thesis_prompt_library_tree" model="ir.ui.view">
+        <field name="name">thesis.prompt.library.tree</field>
+        <field name="model">thesis.prompt.library</field>
+        <field name="arch" type="xml">
+            <list string="Pustaka Prompt Akademik">
+                <field name="code"/>
+                <field name="name"/>
+                <field name="appendix_source"/>
+                <field name="target_degree"/>
+                <field name="active" widget="boolean_toggle"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_thesis_prompt_library_form" model="ir.ui.view">
+        <field name="name">thesis.prompt.library.form</field>
+        <field name="model">thesis.prompt.library</field>
+        <field name="arch" type="xml">
+            <form string="Detail Prompt Akademik">
+                <sheet>
+                    <div class="oe_title">
+                        <span class="o_form_label">Kode &amp; Nama Prompt</span>
+                        <h1>
+                            <field name="code" placeholder="Misal: A.4.1.1" style="width: 200px; display: inline-block;"/>
+                            <span class="mx-2">-</span>
+                            <field name="name" placeholder="Nama Aktivitas Metodologis" style="width: 60%; display: inline-block;"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Klasifikasi Sumber &amp; Jenjang">
+                            <field name="appendix_source"/>
+                            <field name="target_degree"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Instruksi Prompt (Template)">
+                            <field name="prompt_template" placeholder="Kerangka teks prompt dengan placeholder variabel..." widget="text"/>
+                        </page>
+                        <page string="Batasan Akademik &amp; Integritas">
+                            <field name="constraints" placeholder="Batasan metodologis, pencegahan halusinasi, dan etika..." widget="text"/>
+                        </page>
+                        <page string="Target Luaran">
+                            <field name="output_target" placeholder="Kriteria hasil yang diharapkan..." widget="text"/>
+                        </page>
+                        <page string="Sistem Instruksi AI (Persona)">
+                            <field name="system_role" widget="text"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_thesis_prompt_library_search" model="ir.ui.view">
+        <field name="name">thesis.prompt.library.search</field>
+        <field name="model">thesis.prompt.library</field>
+        <field name="arch" type="xml">
+            <search string="Cari Prompt">
+                <field name="code"/>
+                <field name="name"/>
+                <filter string="Lampiran A (Desain)" name="filter_app_a" domain="[('appendix_source', '=', 'appendix_a')]"/>
+                <filter string="Lampiran B (Analisis)" name="filter_app_b" domain="[('appendix_source', '=', 'appendix_b')]"/>
+                <filter string="Lampiran C (Penulisan)" name="filter_app_c" domain="[('appendix_source', '=', 'appendix_c')]"/>
+                <filter string="Lampiran D (Keterampilan)" name="filter_app_d" domain="[('appendix_source', '=', 'appendix_d')]"/>
+                <separator/>
+                <filter string="Sarjana (S1)" name="filter_s1" domain="[('target_degree', 'in', ['s1', 'all'])]"/>
+                <filter string="Pascasarjana (S2/S3)" name="filter_s2_s3" domain="[('target_degree', 'in', ['s2_s3', 'all'])]"/>
+                <group expand="0" string="Kelompokkan Berdasarkan">
+                    <filter string="Sumber Lampiran" name="group_appendix" context="{'group_by': 'appendix_source'}"/>
+                    <filter string="Jenjang Studi" name="group_degree" context="{'group_by': 'target_degree'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_thesis_prompt_library" model="ir.actions.act_window">
+        <field name="name">Pustaka Prompt Akademik</field>
+        <field name="res_model">thesis.prompt.library</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_thesis_prompt_library_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Belum ada prompt akademik yang terdaftar.
+            </p>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top Menu -->
+    <menuitem id="menu_thesis_root"
+              name="Tugas Akhir AI"
+              web_icon="fa fa-graduation-cap,#2C3E50,#FFFFFF"
+              sequence="25"/>
+
+    <!-- Main Categories -->
+    <menuitem id="menu_thesis_workspace"
+              name="Lembar Riset"
+              parent="menu_thesis_root"
+              sequence="10"/>
+
+    <menuitem id="menu_thesis_ai_copilot"
+              name="AI Copilot &amp; Audit"
+              parent="menu_thesis_root"
+              sequence="20"/>
+
+    <menuitem id="menu_thesis_configuration"
+              name="Konfigurasi"
+              parent="menu_thesis_root"
+              groups="sirita_akademik_ta.group_thesis_admin"
+              sequence="90"/>
+
+    <!-- Action Menus -->
+    <menuitem id="menu_thesis_project_action"
+              name="Proyek Tugas Akhir"
+              parent="menu_thesis_workspace"
+              action="action_thesis_project"
+              sequence="10"/>
+
+    <menuitem id="menu_thesis_prompt_library_action"
+              name="Pustaka Prompt Akademik"
+              parent="menu_thesis_ai_copilot"
+              action="action_thesis_prompt_library"
+              sequence="10"/>
+
+    <menuitem id="menu_thesis_prompt_execution_action"
+              name="Riwayat &amp; Audit Log AI"
+              parent="menu_thesis_ai_copilot"
+              action="action_thesis_prompt_execution"
+              sequence="20"/>
+</odoo>

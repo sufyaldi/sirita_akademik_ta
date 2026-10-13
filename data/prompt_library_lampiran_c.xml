@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="prompt_c_6_1_1" model="thesis.prompt.library">
+            <field name="code">C.6.1.1</field>
+            <field name="name">Menulis Bab Pembahasan (Diskusi) (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan skripsi saya:
+Pertanyaan penelitian: [masukkan informasi],
+Temuan / hasil utama: [masukkan ringkasan hasil],
+Kerangka teoretis atau konsep kunci: [masukkan informasi],
+Literatur rujukan utama: [masukkan daftar referensi kunci].
+
+Bantu menyusun draf bab pembahasan (diskusi) untuk jenjang Sarjana (S1).
+
+Susun bab pembahasan yang mencakup poin-poin berikut:
+
+    - Menjawab Rumusan Masalah: Bagaimana temuan utama menjawab secara langsung pertanyaan penelitian;
+    - Dialog dengan Literatur Terdahulu: Bagaimana temuan ini sejalan, berbeda, atau melengkapi penelitian-penelitian terdahulu yang diulas di Bab II;
+    - Interpretasi Menggunakan Teori: Bagaimana kerangka teoretis atau konsep kunci membantu menjelaskan mengapa hasil penelitian menjadi seperti itu;
+    - Penjelasan Fakta Menarik / Anomali: Uraian singkat mengenai temuan tak terduga yang muncul di lapangan;
+    - Keterbatasan Penelitian: Pengakuan jujur mengenai keterbatasan metodologis atau cakupan data yang memengaruhi hasil.
+
+
+Batasan Penting: Dilarang memasukkan temuan atau data empiris baru yang belum pernah disajikan di bab hasil. Pastikan bab pembahasan tidak sekadar mengulang cerita hasil penelitian.
+
+Format Luaran: Kerangka pembahasan terstruktur per subbab disertai panduan isi paragrafnya.]]></field>
+            <field name="output_target"><![CDATA[Draf bab pembahasan yang mengaitkan temuan lapangan dengan literatur secara kritis dan koheren.]]></field>
+        </record>
+
+        <record id="prompt_c_6_1_2" model="thesis.prompt.library">
+            <field name="code">C.6.1.2</field>
+            <field name="name">Menulis Bab Pembahasan (Diskusi) (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan tesis jenjang Magister (S2) saya:
+Pertanyaan penelitian: [masukkan informasi],
+Temuan / hasil analitis utama: [masukkan temuan],
+Kerangka teoretis tingkat lanjut: [masukkan teori],
+Literatur mutakhir dan perdebatan akademik: [masukkan literatur].
+
+Kembangkan penulisan bab pembahasan (diskusi) kritis berstandar pascasarjana.
+
+Susun argumentasi diskusi yang mencakup:
+
+    - Sintesis Jawaban Masalah Ilmiah: Menjelaskan makna mendasar dari temuan terhadap masalah akademik yang diangkat;
+    - Signifikansi Teoretis: Bagaimana temuan ini memvalidasi, merevisi, memperluas, atau menantang teori dan paradigma dominan dalam literatur;
+    - Evaluasi Penjelasan Alternatif: Mengantisipasi kritik, argumen tandingan, atau interpretasi saingan terhadap temuan data;
+    - Implikasi Kebijakan dan Praktis: Uraian konsekuensi nyata temuan terhadap praktik profesional atau regulasi kebijakan;
+    - Keterbatasan Epistemologis dan Metodologis: Refleksi mendalam atas batas-batas generalisasi dan keberlakuan klaim temuan.
+
+
+Batasan Penting: Jangan membuat klaim berlebihan (overclaim) yang tidak ditopang data empiris. Pertahankan kematangan berpikir analitis pascasarjana.
+
+Format Luaran: Narasi bab pembahasan yang komprehensif, kritis, dan mendalam.]]></field>
+            <field name="output_target"><![CDATA[Bab pembahasan yang kokoh untuk mempertahankan kontribusi ilmiah tesis di depan dewan penguji.]]></field>
+        </record>
+
+        <record id="prompt_c_6_1_3" model="thesis.prompt.library">
+            <field name="code">C.6.1.3</field>
+            <field name="name">Pemeriksaan Kualitas Bab Pembahasan (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjau draf bab pembahasan (diskusi) saya berikut ini: [tempelkan teks di sini]
+
+Lakukan evaluasi mutu bab pembahasan (discussion quality check):
+
+    - Apakah bab ini benar-benar membahas dan menginterpretasikan temuan, ataukah masih terjebak sekadar mengulang pemaparan hasil data?
+    - Apakah temuan dihubungkan secara nyata dengan literatur dari Bab II, ataukah literatur baru bermunculan secara tiba-tiba tanpa konteks?
+    - Apakah interpretasi terhadap data didukung oleh logika yang kokoh dan bebas dari spekulasi liar?
+    - Apakah ada klaim temuan baru yang "menyelundup" padahal datanya tidak ada di bab hasil?
+    - Apakah keterbatasan studi diuraikan secara substantif dan tidak sekadar formalitas basa-basi?
+
+
+Tunjukkan tiga area kelemahan utama dan berikan rekomendasi revisi paragrafnya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah substansi temuan asli peneliti.]]></field>
+            <field name="output_target"><![CDATA[Laporan evaluasi kritis yang menjamin bab pembahasan berbobot analitis tinggi.]]></field>
+        </record>
+
+        <record id="prompt_c_6_2_1" model="thesis.prompt.library">
+            <field name="code">C.6.2.1</field>
+            <field name="name">Menulis Bab Kesimpulan (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan skripsi saya:
+Pertanyaan penelitian: [masukkan informasi],
+Temuan utama yang telah dibahas: [masukkan ringkasan],
+Tujuan penelitian: [masukkan informasi].
+
+Bantu saya menyusun draf bab kesimpulan dan saran untuk jenjang Sarjana (S1).
+
+Bab kesimpulan harus memuat:
+
+    - Kesimpulan Inti: Jawaban langsung, ringkas, dan tegas terhadap setiap pertanyaan penelitian (sintesis makna, bukan ringkasan bab per bab);
+    - Kontribusi Penelitian: Apa manfaat teoretis dan praktis yang dihasilkan dari penelitian ini;
+    - Keterbatasan Penelitian: Batasan ruang lingkup yang perlu dipahami oleh pembaca;
+    - Saran / Rekomendasi: Rekomendasi praktis bagi pihak terkait serta saran agenda penelitian masa depan yang relevan dan dapat ditindaklanjuti.
+
+
+Batasan Penting: Dilarang memasukkan fakta baru, analisis baru, atau kutipan literatur baru dalam bab kesimpulan. Buat kesimpulan yang padat, sintetik, dan terfokus.
+
+Format Luaran: Draf bab kesimpulan dan saran yang terstruktur rapi.]]></field>
+            <field name="output_target"><![CDATA[Bab penutup skripsi yang mengunci keseluruhan argumen penelitian secara elegan.]]></field>
+        </record>
+
+        <record id="prompt_c_6_2_2" model="thesis.prompt.library">
+            <field name="code">C.6.2.2</field>
+            <field name="name">Menulis Bab Kesimpulan (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan tesis jenjang Magister (S2) saya:
+Pertanyaan penelitian dan tujuan: [masukkan informasi],
+Sintesis temuan analitis: [masukkan sintesis],
+Kontribusi ilmiah yang diklaim: [masukkan kontribusi].
+
+Kembangkan bab kesimpulan, kontribusi kebaruan, dan agenda riset lanjutan untuk tesis pascasarjana.
+
+Naskah penutup harus menyajikan:
+
+    - Sintesis Komprehensif: Menegaskan kembali bagaimana tesis ini secara tuntas memecahkan masalah ilmiah yang diajukan di bab pendahuluan;
+    - Artikulasi Kontribusi Ilmiah (Thesis Contribution): Merumuskan secara tegas kebaruan (novelty) teoretis, metodologis, atau empiris yang menjadi sumbangsih orisinal tesis;
+    - Refleksi Kritis Batasan Studi: Menjelaskan batasan epistemologis dan ruang lingkup secara jujur dan matang;
+    - Agenda Riset Masa Depan (Future Research Agenda): Mengidentifikasi pertanyaan-pertanyaan penelitian baru yang terbuka berkat temuan tesis ini dan bagaimana peneliti selanjutnya dapat melanjutkannya.
+
+
+Batasan Penting: Pastikan saran riset lanjutan berakar logis dari temuan tesis dan tidak bersifat spekulatif umum.]]></field>
+            <field name="output_target"><![CDATA[Naskah bab kesimpulan tingkat lanjut yang mencerminkan otoritas keilmuan pascasarjana.]]></field>
+        </record>
+
+        <record id="prompt_c_6_2_3" model="thesis.prompt.library">
+            <field name="code">C.6.2.3</field>
+            <field name="name">Pemeriksaan Kualitas Bab Kesimpulan (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjau naskah bab kesimpulan saya di bawah ini: [tempelkan teks di sini]
+
+Lakukan pemeriksaan kualitas bab kesimpulan (conclusion quality check):
+
+    - Apakah setiap pertanyaan penelitian telah dijawab secara lugas dan tuntas?
+    - Apakah ada analisis baru atau data baru yang tidak sengaja dimasukkan ke dalam kesimpulan?
+    - Apakah naskah kesimpulan terlalu bertele-tele atau sekadar mengulang kalimat di bab-bab sebelumnya?
+    - Apakah klaim kontribusi ilmiah terlalu dibesar-besarkan melampaui bukti yang tersedia?
+    - Apakah saran yang diberikan konkret, operasional, dan logis bersumber dari hasil penelitian?
+
+
+Usulkan tiga revisi paling krusial untuk menyempurnakan bab penutup ini.]]></field>
+            <field name="constraints"><![CDATA[Jaga agar kesimpulan tetap padat, sintetik, dan fokus.]]></field>
+            <field name="output_target"><![CDATA[Rekomendasi penajaman bab kesimpulan agar memiliki daya pikat akademik yang kuat.]]></field>
+        </record>
+
+        <record id="prompt_c_6_3_1" model="thesis.prompt.library">
+            <field name="code">C.6.3.1</field>
+            <field name="name">Meninjau Pendahuluan terhadap Tesis yang Selesai (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan draf naskah tesis/skripsi yang telah selesai disusun:
+Topik tesis: [masukkan informasi],
+Rumusan masalah: [masukkan informasi],
+Pertanyaan penelitian: [masukkan informasi],
+Metode dan materi riset: [masukkan informasi],
+Temuan utama dan kesimpulan: [masukkan ringkasan],
+Draf bab pendahuluan saat ini: [tempelkan draf di sini].
+
+Bantu saya meninjau dan menyempurnakan Bab Pendahuluan agar selaras sempurna dengan keseluruhan naskah skripsi (jenjang S1) yang telah rampung.
+
+Lakukan penyelarasan melalui langkah-langkah berikut:
+
+    - Penataan Bingkai Latar Belakang (Framing): Pastikan latar belakang mengantarkan pembaca secara alami menuju rumusan masalah dan tidak membahas hal-hal yang tidak diteliti;
+    - Penajaman Pertanyaan Riset: Pastikan rumusan pertanyaan penelitian di pendahuluan persis sama kata demi kata dengan pertanyaan yang dijawab di bab hasil dan kesimpulan;
+    - Signifikansi dan Posisi Riset: Jelaskan mengapa topik ini penting diteliti secara akademik dan apa kegunaan praktisnya secara proporsional;
+    - Garis Besar Metode dan Struktur Penulisan: Sajikan pengantar ringkas tentang metode yang digunakan dan peta alur bab-bab selanjutnya.
+
+
+Batasan Penting: Jangan membesar-besarkan signifikansi; pastikan klaim di pendahuluan dapat dipenuhi oleh bab-bab berikutnya.]]></field>
+            <field name="output_target"><![CDATA[Bab pendahuluan yang selaras, koheren, dan memikat pembaca sejak halaman pertama.]]></field>
+        </record>
+
+        <record id="prompt_c_6_3_2" model="thesis.prompt.library">
+            <field name="code">C.6.3.2</field>
+            <field name="name">Meninjau Pendahuluan terhadap Tesis yang Selesai (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan naskah tesis pascasarjana (S2) yang telah rampung:
+Fokus tesis dan masalah akademik: [masukkan informasi],
+Pertanyaan riset dan kerangka teoretis: [masukkan informasi],
+Metodologi dan data empiris: [masukkan informasi],
+Temuan kunci dan kontribusi: [masukkan informasi],
+Draf bab pendahuluan saat ini: [tempelkan draf pendahuluan].
+
+Lakukan kalibrasi dan penyempurnaan tingkat lanjut terhadap Bab Pendahuluan tesis.
+
+Sempurnakan naskah pendahuluan pada aspek:
+
+    - Konteks Ilmiah dan Masalah Epistemologis: Menyajikan dasar urgensi akademik yang meyakinkan dewan penguji;
+    - Perumusan Kesenjangan Riset (Research Gap): Menegaskan secara eksplisit celah pengetahuan dalam literatur yang akan diisi oleh tesis ini;
+    - Klaim Kontribusi Ilmiah (Thesis Statement): Merumuskan tesis utama dan kontribusi orisinal secara presisi tanpa nada melebih-lebihkan;
+    - Peta Alur Argumentasi (Narrative Roadmap): Memberikan panduan navigasi struktural yang jelas bagi pembaca untuk menelusuri argumen tesis lintas bab.
+
+
+Batasan Penting: Pertahankan ketajaman gaya penulisan ilmiah pascasarjana.]]></field>
+            <field name="output_target"><![CDATA[Bab pendahuluan tingkat lanjut yang kokoh, elegan, dan selaras sempurna dengan temuan akhir tesis.]]></field>
+        </record>
+
+        <record id="prompt_c_6_3_3" model="thesis.prompt.library">
+            <field name="code">C.6.3.3</field>
+            <field name="name">Pemeriksaan Kualitas Bab Pendahuluan (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjau draf Bab Pendahuluan berikut ini terhadap ringkasan keseluruhan tesis saya: [tempelkan draf pendahuluan dan ringkasan tesis]
+
+Lakukan pemeriksaan kualitas bab pendahuluan (introduction quality check):
+
+    - Apakah masalah penelitian didefinisikan dengan tajam sejak awal ataukah pembahasannya terlalu berputar-putar?
+    - Apakah pertanyaan penelitian yang tercantum di sini cocok sepenuhnya dengan apa yang dianalisis di bab hasil?
+    - Apakah ada janji atau klaim ruang lingkup di pendahuluan yang ternyata tidak dibahas di dalam tesis?
+    - Apakah gaya bahasa mencerminkan objektivitas ilmiah yang meyakinkan?
+
+
+Tunjukkan inkonsistensi yang ada dan berikan rekomendasi perbaikan teksnya.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah fokus penelitian yang telah selesai dikerjakan.]]></field>
+            <field name="output_target"><![CDATA[Catatan audit keselarasan pendahuluan untuk menjamin naskah tidak memiliki celah logika.]]></field>
+        </record>
+
+        <record id="prompt_c_6_4_1" model="thesis.prompt.library">
+            <field name="code">C.6.4.1</field>
+            <field name="name">Menyusun Draf Abstrak dan Kata Kunci (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan naskah skripsi yang telah selesai:
+Judul skripsi: [masukkan informasi],
+Rumusan masalah dan tujuan: [masukkan informasi],
+Metodologi dan sumber data: [masukkan informasi],
+Temuan utama: [masukkan ringkasan temuan],
+Kesimpulan pokok: [masukkan kesimpulan],
+Target panjang abstrak: [misalnya 200–250 kata].
+
+Susun draf abstrak akademik yang padat, presisi, dan komprehensif untuk jenjang Sarjana (S1), beserta 4–6 kata kunci akademik.
+
+Struktur abstrak harus memuat satu kesatuan paragraf yang mencakup:
+
+    - Latar Belakang Singkat dan Masalah Penelitian (1–2 kalimat);
+    - Tujuan Penelitian (1 kalimat);
+    - Metodologi dan Materi Data (1–2 kalimat: jenis penelitian, sumber data, dan teknik analisis);
+    - Temuan Utama Hasil Penelitian (2–3 kalimat: hasil faktual yang paling penting);
+    - Kesimpulan Pokok dan Implikasi (1–2 kalimat: jawaban masalah dan kontribusi ringkas).
+
+
+Batasan Penting: Dilarang menyertakan kutipan pustaka, singkatan yang tidak dijelaskan, atau tabel/gambar di dalam abstrak. Pastikan jumlah kata mematuhi batas maksimal universitas.]]></field>
+            <field name="output_target"><![CDATA[Abstrak profesional siap pakai dan daftar kata kunci yang representatif.]]></field>
+        </record>
+
+        <record id="prompt_c_6_4_2" model="thesis.prompt.library">
+            <field name="code">C.6.4.2</field>
+            <field name="name">Menyusun Draf Abstrak dan Kata Kunci (Jenjang Magister S2 / Pascasarjana)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan naskah tesis jenjang Magister (S2) saya:
+Judul dan subjudul tesis: [masukkan informasi],
+Masalah akademik dan kesenjangan riset: [masukkan informasi],
+Kerangka teoretis dan metodologi: [masukkan informasi],
+Temuan analitis utama: [masukkan informasi],
+Kontribusi orisinal tesis: [masukkan informasi],
+Target panjang abstrak: [misalnya 250–300 kata].
+
+Susun draf abstrak tingkat pascasarjana dalam Bahasa Indonesia (dan versi Bahasa Inggris jika diperlukan) beserta 5–7 kata kunci standar tesaurus ilmiah.
+
+Abstrak harus merefleksikan kedalaman penelitian meliputi:
+
+    - Artikulasi masalah ilmiah dan celah literatur yang mendasarinya;
+    - Pendekatan teoretis dan justifikasi metodologis yang diadopsi;
+    - Temuan analitis kunci yang memuat signifikansi substantif;
+    - Kontribusi ilmiah orisinal bagi disiplin ilmu serta implikasi praktis atau kebijakannya.
+
+
+Batasan Penting: Gunakan gaya bahasa akademik yang sangat padat, lugas, dan bebas dari kalimat pengisi (filler words).]]></field>
+            <field name="output_target"><![CDATA[Abstrak tesis pascasarjana berstandar publikasi internasional yang siap diserahkan ke dewan penguji.]]></field>
+        </record>
+
+        <record id="prompt_c_6_4_3" model="thesis.prompt.library">
+            <field name="code">C.6.4.3</field>
+            <field name="name">Pemeriksaan Kualitas Abstrak (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Tinjau draf abstrak skripsi/tesis saya berikut ini: [tempelkan draf abstrak di sini]
+
+Lakukan pemeriksaan kualitas abstrak (abstract quality check):
+
+    - Apakah kelima komponen wajib (latar belakang, tujuan, metode, temuan, kesimpulan) hadir secara proporsional?
+    - Apakah abstrak mencerminkan isi sebenarnya dari naskah tesis, ataukah ada klaim yang tidak berdasar?
+    - Apakah jumlah kata sudah mematuhi pedoman kampus (tidak kepanjangan atau terlalu pendek)?
+    - Apakah ada singkatan yang tidak didefinisikan atau sitasi pustaka yang terselip?
+    - Apakah kata kunci yang dipilih cukup spesifik dan lazim digunakan dalam pengindeksan pangkalan data ilmiah?
+
+
+Berikan usulan perbaikan kalimat untuk mengoptimalkan kejelasan dan daya keterbacaan abstrak.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah substansi temuan riset.]]></field>
+            <field name="output_target"><![CDATA[Abstrak yang telah disunting sempurna untuk pengunggahan repositori institusional.]]></field>
+        </record>
+
+        <record id="prompt_c_6_5_1" model="thesis.prompt.library">
+            <field name="code">C.6.5.1</field>
+            <field name="name">Meninjau Gambar, Tabel, dan Elemen Visual (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Daftar tabel, gambar, grafik, diagram, atau peta dalam naskah saya: [tempelkan daftar judul tabel/gambar dan fungsinya]
+
+Lakukan peninjauan terhadap elemen visual dan grafis dalam skripsi/tesis saya:
+
+    - Kemandirian Informasi (Self-Contained): Apakah setiap judul tabel/gambar cukup jelas dan informatif sehingga pembaca dapat memahaminya tanpa harus membaca teks utama terlebih dahulu?
+    - Integrasi Teks-Visual: Apakah setiap tabel/gambar telah dirujuk dan dijelaskan secara eksplisit di dalam paragraf teks (callout seperti "lihat Tabel 4.1"), ataukah ada visual yang "telantar" tanpa ulasan?
+    - Ketepatan Format dan Sumber: Apakah nomor urut tabel/gambar konsisten dengan nomor bab? Apakah sumber data telah dicantumkan di bagian bawah visual secara lengkap?
+    - Keperluan Elemen Visual: Apakah ada tabel atau gambar yang berlebihan dan sebenarnya cukup dipaparkan dalam satu kalimat singkat di teks?
+
+
+Berikan daftar saran perbaikan judul, penempatan, dan penjelasan naratif untuk setiap elemen visual.]]></field>
+            <field name="constraints"><![CDATA[Pastikan visual mendukung argumen analitis, bukan sekadar hiasan halaman.]]></field>
+            <field name="output_target"><![CDATA[Panduan audit tabel dan gambar untuk meningkatkan profesionalisme penyajian data tesis.]]></field>
+        </record>
+
+        <record id="prompt_c_6_5_2" model="thesis.prompt.library">
+            <field name="code">C.6.5.2</field>
+            <field name="name">Pemeriksaan Keselarasan Elemen Visual dengan Argumen (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf pembahasan yang memuat elemen visual: [tempelkan teks analisis dan deskripsi visual terkait]
+
+Lakukan pemeriksaan keselarasan antara elemen visual dengan argumen analitis (visual-argument alignment check):
+
+    - Apakah grafik, tabel, atau diagram tersebut benar-benar membuktikan poin argumen yang sedang dibangun di paragraf teks?
+    - Apakah ada kontradiksi antara angka/data dalam tabel dengan penjelasan kalimat yang tertulis?
+    - Apakah interpretasi dalam teks menyoroti tren utama dan implikasi data visual, bukan hanya membaca ulang angka baris demi baris?
+    - Apakah ada distorsi visual (seperti skala sumbu grafik yang menyesatkan) yang dapat menimbulkan salah tafsir pembaca?
+
+
+Tandai ketidaksesuaian data dan sarankan perbaikan teks penjelasan agar selaras dengan data visual.]]></field>
+            <field name="constraints"><![CDATA[Pertahankan ketelitian numerik dan integritas data visual.]]></field>
+            <field name="output_target"><![CDATA[Keselarasan narasi teks dengan representasi visual data yang terbebas dari inkonsistensi.]]></field>
+        </record>
+
+        <record id="prompt_c_6_6_1" model="thesis.prompt.library">
+            <field name="code">C.6.6.1</field>
+            <field name="name">Meninjau Daftar Pustaka dan Referensi (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf daftar pustaka saya: [tempelkan daftar pustaka di sini],
+Gaya sitasi yang diwajibkan: [misalnya APA edisi ke-7 / Harvard / IEEE / Chicago / Turabian].
+
+Lakukan audit dan peninjauan menyeluruh terhadap daftar pustaka ini:
+
+    - Konsistensi Gaya Selingkung: Apakah tanda baca, penggunaan huruf miring (italik), kapitalisasi judul, dan susunan urutan nama penulis telah 100% konsisten dengan pedoman gaya sitasi yang diwajibkan?
+    - Kelengkapan Metadata: Tandai entri rujukan yang kehilangan komponen penting (tahun terbit, volume/nomor jurnal, penerbit, nomor halaman, atau tautan DOI resmi);
+    - Urutan Abjad: Pastikan seluruh entri tersusun secara alfabetis yang benar berdasarkan nama keluarga penulis pertama;
+    - Format Sumber Khusus: Periksa ketepatan penulisan untuk sumber undang-undang, dokumen situs web, laporan institusi, atau dokumen daring.
+
+
+Tampilkan daftar entri yang keliru beserta versi perbaikan formatnya yang benar.]]></field>
+            <field name="constraints"><![CDATA[Jangan menghapus atau mengubah identitas sumber asli tanpa konfirmasi.]]></field>
+            <field name="output_target"><![CDATA[Daftar pustaka yang rapi, tertib format, dan bebas dari kesalahan teknis pengutipan.]]></field>
+        </record>
+
+        <record id="prompt_c_6_6_2" model="thesis.prompt.library">
+            <field name="code">C.6.6.2</field>
+            <field name="name">Pemeriksaan Kecocokan Sitasi dan Daftar Pustaka (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf naskah teks tesis: [tempelkan naskah teks],
+Draf daftar pustaka: [tempelkan daftar pustaka].
+
+Lakukan pemeriksaan kecocokan silang (cross-match check) antara sitasi di dalam teks dengan daftar pustaka:
+
+    - Sitasi Tanpa Referensi (Missing in Bibliography): Identifikasi setiap nama penulis dan tahun yang disitir dalam teks naskah namun tidak ditemukan dalam daftar pustaka;
+    - Referensi Tanpa Sitasi (Ghost References): Identifikasi setiap entri di daftar pustaka yang tidak pernah dirujuk sekali pun di dalam teks;
+    - Ketidakcocokan Tahun dan Ejaan Nama: Tandai ketidaksinkronan ejaan nama penulis atau perbedaan tahun terbit antara kutipan di badan teks dengan entri di daftar pustaka (misalnya di teks tertulis 2021, namun di daftar pustaka 2022).
+
+
+Sajikan laporan audit kecocokan sitasi dalam bentuk tabel daftar temuan ketidakcocokan.]]></field>
+            <field name="constraints"><![CDATA[Lakukan pengecekan secara ketat demi menjamin integritas kejujuran akademik skripsi/tesis.]]></field>
+            <field name="output_target"><![CDATA[Laporan verifikasi silang sitasi yang memastikan kepatuhan 100% antara naskah dengan daftar pustaka.]]></field>
+        </record>
+
+        <record id="prompt_c_6_6_3" model="thesis.prompt.library">
+            <field name="code">C.6.6.3</field>
+            <field name="name">Prompt Khusus Gaya Sitasi (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Daftar referensi yang akan diformat: [tempelkan daftar referensi mentah],
+Gaya sitasi target: [misalnya APA 7th / Harvard / IEEE / Chicago],
+Jenis dokumen: [jurnal, buku, bab buku, laporan, undang-undang, dll.].
+
+Format ulang daftar referensi mentah ini agar mematuhi aturan baku gaya sitasi target secara presisi.
+
+Perhatikan detail teknis:
+
+    - Aturan penggunaan ampersand (\&) vs kata "dan";
+    - Format singkatan nama depan penulis;
+    - Aturan huruf miring pada judul buku atau nama jurnal;
+    - Penulisan tautan DOI aktif (format https://doi.org/...);
+    - Indentasi gantung (hanging indent) yang sesuai untuk daftar pustaka.
+
+
+Sajikan hasil pemformatan akhir yang siap langsung disalin ke naskah skripsi/tesis.]]></field>
+            <field name="constraints"><![CDATA[Jangan mengubah data faktual (nama penulis, tahun, judul); hanya perbaiki tata letak tanda baca dan tipografinya.]]></field>
+            <field name="output_target"><![CDATA[Daftar referensi terstandar yang sempurna sesuai format gaya sitasi institusi.]]></field>
+        </record>
+
+        <record id="prompt_c_6_6_4" model="thesis.prompt.library">
+            <field name="code">C.6.6.4</field>
+            <field name="name">Pemeriksaan Kualitas Referensi dan Kecukupan Akademik (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Daftar referensi skripsi/tesis saya: [tempelkan daftar pustaka],
+Bidang disiplin ilmu: [masukkan bidang ilmu].
+
+Lakukan evaluasi mutu dan kecukupan kesarjanaan (scholarly adequacy check) terhadap koleksi rujukan pustaka ini:
+
+    - Kemutakhiran Referensi: Berapa persentase literatur yang terbit dalam 5–10 tahun terakhir? Apakah penelitian didukung oleh literatur terkini?
+    - Otoritas dan Reputasi Sumber: Apakah proporsi artikel jurnal internasional/nasional bereputasi dan ditinjau sejawat mencukupi dibandingkan sumber internet populer atau buku teks pengantar?
+    - Kehadiran Karya Monumental (Seminal Works): Apakah karya-karya pelopor atau teoretisi klasik di bidang kajian ini telah diikutsertakan?
+    - Keberagaman Sumber: Apakah terdapat ketergantungan berlebihan pada satu penulis atau satu kelompok peneliti saja?
+
+
+Berikan rekomendasi perbaikan komposisi daftar pustaka untuk memperkuat bobot ilmiah naskah.]]></field>
+            <field name="constraints"><![CDATA[Hindari rekomendasi sumber fiktif; hanya berikan saran kategori literatur otoritatif yang perlu ditambah.]]></field>
+            <field name="output_target"><![CDATA[Laporan evaluasi kecukupan akademik rujukan pustaka.]]></field>
+        </record>
+
+        <record id="prompt_c_6_7_1" model="thesis.prompt.library">
+            <field name="code">C.6.7.1</field>
+            <field name="name">Koherensi Naskah Lengkap dan Benang Merah Narasi (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Ringkasan draf keseluruhan bab tesis:
+Bab I (Pendahuluan): [masukkan ringkasan],
+Bab II (Tinjauan Pustaka): [masukkan ringkasan],
+Bab III (Metodologi): [masukkan ringkasan],
+Bab IV (Temuan \& Analisis): [masukkan ringkasan],
+Bab V (Kesimpulan): [masukkan ringkasan].
+
+Lakukan pemeriksaan koherensi naskah lengkap dan benang merah narasi (narrative thread check) untuk skripsi jenjang Sarjana (S1).
+
+Evaluasi kesatuan alur dari awal hingga akhir:
+
+    - Apakah "janji" dan rumusan masalah yang diajukan di Bab I secara konsisten dijawab di Bab IV dan disimpulkan di Bab V?
+    - Apakah konsep dan teori dari Bab II benar-benar digunakan saat menganalisis data di Bab IV?
+    - Apakah ada bagian bab yang terasa menyimpang dari fokus utama skripsi?
+    - Apakah perpindahan dan transisi narasi antar-bab terasa alami dan logis?
+
+
+Tunjukkan titik-titik sambungan narasi yang lemah dan berikan kalimat pengait perbaikannya.]]></field>
+            <field name="constraints"><![CDATA[Jaga agar struktur naskah tetap terarah pada tujuan penelitian semula.]]></field>
+            <field name="output_target"><![CDATA[Panduan penyelarasan benang merah naskah untuk menjamin keutuhan skripsi secara holistik.]]></field>
+        </record>
+
+        <record id="prompt_c_6_7_2" model="thesis.prompt.library">
+            <field name="code">C.6.7.2</field>
+            <field name="name">Keselarasan Argumen dan Bukti Lintas Bab (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Naskah tesis lengkap atau ringkasan analitis bab-bab tesis: [masukkan ringkasan analitis per bab]
+
+Lakukan pemeriksaan keselarasan argumen dan bukti lintas bab (argument-evidence alignment across chapters) untuk tesis jenjang Magister (S2).
+
+Lakukan audit menyeluruh terhadap arsitektur intelektual tesis:
+
+    - Koherensi Bangunan Argumen: Apakah argumen pokok tesis berkembang secara kumulatif dan konsisten dari bab metodologi hingga bab pembahasan?
+    - Kecukupan Bukti Empiris/Tekstual: Apakah setiap klaim penting yang diajukan di bab pembahasan telah memiliki landasan data yang kuat di bab analisis?
+    - Konsistensi Paradigma Teoretis: Apakah tidak ada pertentangan asumsi filosofis antara kerangka teori di awal naskah dengan kesimpulan yang ditarik di akhir?
+    - Penyelarasan Pernyataan Tesis (Thesis Statement): Apakah kalimat posisi akademik di pendahuluan terbukti secara meyakinkan oleh bukti-bukti di bagian penutup?
+
+
+Berikan analisis kritis mengenai kelemahan logis naskah dan langkah penguatan argumennya.]]></field>
+            <field name="constraints"><![CDATA[Evaluasi harus mengacu pada standar ketat pembelaan tesis pascasarjana.]]></field>
+            <field name="output_target"><![CDATA[Audit komprehensif keselarasan argumen yang mengamankan tesis dari sanggahan penguji sidang.]]></field>
+        </record>
+
+        <record id="prompt_c_6_7_3" model="thesis.prompt.library">
+            <field name="code">C.6.7.3</field>
+            <field name="name">Pemeriksaan Integritas Naskah Akhir (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Draf naskah tesis lengkap yang siap diserahkan: [tempelkan ringkasan bagian atau teks lengkap]
+
+Lakukan pemeriksaan integritas naskah akhir (final manuscript integrity check):
+
+    - Integritas Struktur Formal: Kelengkapan halaman judul, pernyataan orisinalitas, abstrak, kata pengantar, daftar isi, daftar tabel/gambar, bab inti, daftar pustaka, dan lampiran;
+    - Konsistensi Gaya dan Nada Penulisan: Nada akademis yang objektif, penggunaan kata ganti orang yang taat aturan kampus, dan penghindaran istilah informal;
+    - Ketertiban Tipografi dan Tata Bahasa: Keseragaman penomoran bab/subbab, tata letak margin, format kutipan langsung, dan ketepatan ejaan bahasa baku;
+    - Kepatuhan Integritas Akademik: Verifikasi bebas dari indikasi fabrikasi, manipulasi data, atau plagiarisme terselubung.
+
+
+Sajikan daftar perbaikan teknis terakhir yang wajib dituntaskan sebelum naskah dijilid/diunggah.]]></field>
+            <field name="constraints"><![CDATA[Fokus pada aspek integritas formal dan kerapian naskah akhir.]]></field>
+            <field name="output_target"><![CDATA[Lembar persetujuan mandiri integritas naskah akhir menjelang pengumpulan.]]></field>
+        </record>
+
+        <record id="prompt_c_6_7_4" model="thesis.prompt.library">
+            <field name="code">C.6.7.4</field>
+            <field name="name">Penyempurnaan Bagian Naskah (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Bagian atau subbab naskah yang ingin disempurnakan: [tempelkan teks draf di sini],
+Sasaran penyempurnaan: [kejelasan kalimat / kepadatan bahasa / ketajaman argumen / kelancaran transisi].
+
+Lakukan penyempurnaan bagian naskah (section refinement) dengan tetap mempertahankan substansi dan orisinalitas gagasan saya.
+
+Lakukan perbaikan pada tingkatan:
+
+    - Memperbaiki struktur kalimat yang berbelit-belit agar menjadi kalimat ilmiah yang tegas dan lugas;
+    - Menghilangkan pemborosan kata (wordiness) dan repetisi yang tidak perlu;
+    - Memperkuat konjungsi antar-kalimat untuk menciptakan aliran bacaan yang kohesif;
+    - Menyesuaikan diksi dengan kosakata akademik yang baku dan presisi.
+
+
+Sajikan draf versi revisi disertai penjelasan singkat alasan di balik perbaikan kunci yang dilakukan.
+
+Batasan Penting: Dilarang mengubah makna asli argumen peneliti. Dilarang melakukan penulisan hantu (ghostwriting) yang mengaburkan kepengarangan asli mahasiswa.]]></field>
+            <field name="output_target"><![CDATA[Bagian teks yang telah disunting secara profesional dan mengalir dengan indah.]]></field>
+        </record>
+
+        <record id="prompt_c_6_8_1" model="thesis.prompt.library">
+            <field name="code">C.6.8.1</field>
+            <field name="name">Membuat Daftar Periksa Final Pengumpulan Tesis (Jenjang Sarjana S1)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s1</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan pedoman pengumpulan skripsi di universitas saya: [tempelkan ketentuan kampus],
+Jadwal batas waktu pengumpulan (deadline): [masukkan tanggal].
+
+Buat daftar periksa final (final submission checklist) untuk pengumpulan skripsi jenjang Sarjana (S1).
+
+Daftar periksa harus merinci langkah-langkah dalam urutan kronologis:
+
+    - Pemeriksaan Kelengkapan Berkas Naskah: Naskah lengkap dari sampul hingga lampiran, lembar pengesahan pembimbing, surat pernyataan bebas plagiarisme bermeterai;
+    - Pemeriksaan Format Fisik / Digital: Format dokumen PDF/A, ukuran berkas, kesesuaian margin, penomoran halaman Romawi dan angka Arab;
+    - Pemeriksaan Administratif Kampus: Bebas pustaka universitas, bukti persetujuan sidang, bukti unggah repositori;
+    - Persiapan Ujian Sidang Skripsi: Pembuatan slide presentasi ringkas dan pencetakan naskah untuk dewan penguji.]]></field>
+            <field name="constraints"><![CDATA[Sesuaikan dengan ketentuan administratif yang berlaku di universitas saya.]]></field>
+            <field name="output_target"><![CDATA[Checklist penyerahan skripsi yang sistematis untuk memastikan tidak ada syarat administrasi yang terlewat.]]></field>
+        </record>
+
+        <record id="prompt_c_6_8_2" model="thesis.prompt.library">
+            <field name="code">C.6.8.2</field>
+            <field name="name">Membuat Daftar Periksa Final Pengumpulan Tesis (Jenjang Magister S2)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan ketentuan resmi pengumpulan tesis pascasarjana: [tempelkan pedoman institusi],
+Tanggal batas akhir pengumpulan dan jadwal sidang: [masukkan tanggal].
+
+Buat daftar periksa final pengumpulan tesis jenjang Magister (S2).
+
+Daftar periksa harus mencakup tahapan verifikasi tingkat lanjut:
+
+    - Kepatuhan Format Naskah Pascasarjana: Standar pengikatan (jilid), tata letak halaman persetujuan komite penguji, format abstrak multibahasa, dan kelengkapan data lampiran;
+    - Verifikasi Orisinalitas dan Bebas Plagiasi: Ambang batas uji kemiripan (misalnya Turnitin di bawah persentase toleransi kampus), deklarasi kepatuhan etika riset, dan pernyataan penggunaan alat AI sesuai aturan universitas;
+    - Penyelarasan Publikasi Ilmiah: Bukti submit/accepted artikel jurnal ilmiah (jika menjadi syarat kelulusan pascasarjana);
+    - Dokumentasi Repositori Riset: Pengarsipan dataset penelitian dan berkas naskah digital berstandar arsip nasional.]]></field>
+            <field name="constraints"><![CDATA[Prioritaskan syarat-syarat mutlak kelulusan akademik pascasarjana.]]></field>
+            <field name="output_target"><![CDATA[Checklist final komprehensif yang menjamin kelancaran proses yudisium dan kelulusan tesis.]]></field>
+        </record>
+
+        <record id="prompt_c_6_8_3" model="thesis.prompt.library">
+            <field name="code">C.6.8.3</field>
+            <field name="name">Refleksi Kesiapan Akhir Sebelum Pengumpulan (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Berdasarkan keseluruhan perjalanan penulisan tesis yang telah selesai:
+Topik dan pertanyaan penelitian: [masukkan informasi],
+Tantangan utama yang dihadapi selama riset: [masukkan tantangan],
+Metodologi dan pembelajaran yang diperoleh: [masukkan pengalaman].
+
+Pandu saya melakukan refleksi kesiapan akhir (final readiness reflection) menjelang ujian sidang pertahanan tesis.
+
+Bantu saya merefleksikan:
+
+    - Pertahanan Argumen Inti: Bagaimana saya merangkum kontribusi pokok penelitian saya dalam waktu 2 menit secara meyakinkan di depan dewan penguji?
+    - Kekuatan Metodologis: Mengapa metode yang saya gunakan adalah yang paling absah, dan bagaimana saya menjawab keraguan penguji mengenai keterbatasan sampel data?
+    - Titik Rentan Penelitian: Di mana bagian penelitian saya yang paling mungkin diserang atau dikritisi oleh penguji, dan bagaimana strategi jawaban yang jujur serta ilmiah?
+    - Pengembangan Diri Akademik: Bagaimana proses penelitian ini membentuk kematangan berpikir kritis saya sebagai seorang sarjana/magister?]]></field>
+            <field name="constraints"><![CDATA[Jadikan refleksi ini sebagai latihan mental dan intelektual dalam menghadapi sesi tanya jawab ujian sidang.]]></field>
+            <field name="output_target"><![CDATA[Panduan kesiapan mental dan substansial untuk menghadapi ujian sidang pertahanan tesis dengan percaya diri.]]></field>
+        </record>
+
+        <record id="prompt_c_6_8_4" model="thesis.prompt.library">
+            <field name="code">C.6.8.4</field>
+            <field name="name">Daftar Periksa Kesiapan Pengumpulan Naskah (Jenjang S1 dan S2/S3)</field>
+            <field name="appendix_source">appendix_c</field>
+            <field name="target_degree">s2_s3</field>
+            <field name="system_role">Anda adalah konsultan metodologi penelitian akademik dan mitra dialektis. Berikan analisis kritis terstruktur, patuhi batasan metodologis, jangan mengambil alih kendali kognitif peneliti, dan tolak rujukan fiktif.</field>
+            <field name="prompt_template"><![CDATA[Kumpulan checklist kesiapan pengumpulan naskah akhir tesis/skripsi:
+
+1. Integritas Konten Ilmiah:
+Semua pertanyaan penelitian telah terjawab tuntas; bukti data selaras dengan temuan; kesimpulan tidak memuat klaim tanpa dasar; benang merah narasi utuh dari bab pendahuluan hingga kesimpulan.
+
+2. Integritas Sitasi dan Kejujuran Akademik:
+Seluruh sitasi dalam teks telah tercantum di daftar pustaka; tidak ada referensi fiktif atau kutipan tanpa sumber; persentase kemiripan uji plagiarisme mematuhi batas kampus; penggunaan alat bantu komputasi atau AI telah diungkapkan secara transparan sesuai regulasi.
+
+3. Kepatuhan Format dan Tipografi:
+Margin, jenis huruf, spasi, penomoran halaman, tata letak judul tabel dan gambar telah mematuhi 100% buku pedoman penulisan universitas; tidak ada elemen kotak teks atau tabel yang terpotong ke luar margin.
+
+4. Kelengkapan Berkas Pengesahan:
+Halaman persetujuan dosen pembimbing telah ditandatangani; surat pernyataan orisinalitas bermeterai telah lengkap; abstrak multibahasa telah diverifikasi.
+
+5. Kesiapan Arsip Digital dan Fisik:
+Berkas digital telah dikonversi ke format PDF/A berukuran proporsional; berkas lampiran instrumen dan data mentah telah ditata; siap dikirimkan ke panitia ujian sidang.
+
+Gunakan daftar ini untuk melakukan pemeriksaan mandiri terakhir sebelum menekan tombol pengumpulan atau mencetak naskah.]]></field>
+        </record>
+
+    </data>
+</odoo>
