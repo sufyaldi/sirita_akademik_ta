@@ -71,7 +71,7 @@
                 <separator/>
                 <filter string="Sarjana (S1)" name="filter_s1" domain="[('target_degree', 'in', ['s1', 'all'])]"/>
                 <filter string="Pascasarjana (S2/S3)" name="filter_s2_s3" domain="[('target_degree', 'in', ['s2_s3', 'all'])]"/>
-                <group expand="0" string="Kelompokkan Berdasarkan">
+                <group>
                     <filter string="Sumber Lampiran" name="group_appendix" context="{'group_by': 'appendix_source'}"/>
                     <filter string="Jenjang Studi" name="group_degree" context="{'group_by': 'target_degree'}"/>
                 </group>

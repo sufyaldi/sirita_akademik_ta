@@ -3,7 +3,7 @@
     <!-- Top Menu -->
     <menuitem id="menu_thesis_root"
               name="Tugas Akhir AI"
-              web_icon="fa fa-graduation-cap,#2C3E50,#FFFFFF"
+              web_icon="sirita_akademik_ta,static/description/icon.png"
               sequence="25"/>
 
     <!-- Main Categories -->

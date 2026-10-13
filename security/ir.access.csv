@@ -1,0 +1,10 @@
+id,name,model_id,group_id/id,operation,domain
+access_thesis_stage_all,thesis.stage.all,thesis.stage,,r,
+access_thesis_stage_admin,thesis.stage.admin,thesis.stage,sirita_akademik_ta.group_thesis_admin,crud,
+access_thesis_prompt_library_all,thesis.prompt.library.all,thesis.prompt.library,,r,
+access_thesis_prompt_library_admin,thesis.prompt.library.admin,thesis.prompt.library,sirita_akademik_ta.group_thesis_admin,crud,
+access_thesis_project_student,thesis.project.student,thesis.project,sirita_akademik_ta.group_thesis_student,cru,
+access_thesis_project_advisor,thesis.project.advisor,thesis.project,sirita_akademik_ta.group_thesis_advisor,crud,
+access_thesis_prompt_execution_student,thesis.prompt.execution.student,thesis.prompt.execution,sirita_akademik_ta.group_thesis_student,cru,
+access_thesis_prompt_execution_advisor,thesis.prompt.execution.advisor,thesis.prompt.execution,sirita_akademik_ta.group_thesis_advisor,crud,
+access_wizard_prompt_runner_student,wizard.prompt.runner.student,wizard.prompt.runner,sirita_akademik_ta.group_thesis_student,crud,

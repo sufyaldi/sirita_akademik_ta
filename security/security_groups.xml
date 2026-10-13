@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
+    <data noupdate="1">
+        <!-- 1. Kategori Hak Akses Utama -->
+        <record id="module_category_sirita_akademik_ta" model="ir.module.category">
+            <field name="name">SIRITA Akademik Tugas Akhir</field>
+            <field name="description">Pengaturan akses untuk modul Tugas Akhir</field>
+            <field name="sequence">120</field>
+        </record>
+
+        <!-- 2. Definisi res.groups.privilege (Odoo 20 Scope Privilege) -->
+        <record id="privilege_sirita_akademik_ta" model="res.groups.privilege">
+            <field name="name">SIRITA Tugas Akhir Privilege</field>
+            <field name="category_id" ref="module_category_sirita_akademik_ta"/>
+        </record>
+
         <record id="group_thesis_student" model="res.groups">
             <field name="name">Mahasiswa Peneliti</field>
-            <field name="category_id" ref="base.module_category_services"/>
+            <field name="privilege_id" ref="privilege_sirita_akademik_ta"/>
             <field name="comment">Akses untuk mahasiswa mengerjakan riset dan berinteraksi dengan AI Copilot.</field>
         </record>
 
         <record id="group_thesis_advisor" model="res.groups">
             <field name="name">Dosen Pembimbing</field>
-            <field name="category_id" ref="base.module_category_services"/>
+            <field name="privilege_id" ref="privilege_sirita_akademik_ta"/>
             <field name="implied_ids" eval="[(4, ref('group_thesis_student'))]"/>
             <field name="comment">Akses untuk dosen meninjau progres riset, audit prompt, dan persetujuan tahapan.</field>
         </record>
 
         <record id="group_thesis_admin" model="res.groups">
             <field name="name">Koordinator TA / Admin Akademik</field>
-            <field name="category_id" ref="base.module_category_services"/>
+            <field name="privilege_id" ref="privilege_sirita_akademik_ta"/>
             <field name="implied_ids" eval="[(4, ref('group_thesis_advisor'))]"/>
             <field name="comment">Akses manajerial penuh untuk konfigurasi tahapan dan pustaka prompt.</field>
         </record>

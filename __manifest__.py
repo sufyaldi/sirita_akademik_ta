@@ -37,7 +37,7 @@ Fitur Utama:
     ],
     'data': [
         'security/security_groups.xml',
-        'security/ir.model.access.csv',
+        'security/ir.access.csv',
         'data/thesis_stage_data.xml',
         'data/prompt_library_lampiran_a.xml',
         'data/prompt_library_lampiran_b.xml',
