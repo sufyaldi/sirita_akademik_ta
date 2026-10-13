@@ -12,23 +12,21 @@
                 <field name="stage_id"/>
                 <field name="execution_count"/>
                 <templates>
-                    <t t-name="kanban-box">
-                        <div class="oe_kanban_global_click p-3 shadow-sm rounded bg-white">
-                            <div class="o_kanban_record_top mb-2">
-                                <div class="o_kanban_record_headings">
-                                    <strong class="o_kanban_record_title text-primary"><field name="name"/></strong>
-                                </div>
-                            </div>
-                            <div class="o_kanban_record_body small text-muted">
-                                <div><i class="fa fa-user me-1"/> Peneliti: <field name="student_id"/></div>
-                                <div><i class="fa fa-graduation-cap me-1"/> Jenjang: <field name="degree_level"/></div>
-                            </div>
-                            <div class="o_kanban_record_bottom mt-2 pt-2 border-top d-flex justify-content-between align-items-center">
-                                <span class="badge rounded-pill bg-light text-dark border">
-                                    <i class="fa fa-robot me-1 text-info"/> <field name="execution_count"/> Sesi AI
-                                </span>
+                    <t t-name="card">
+                        <div class="o_kanban_record_top mb-2">
+                            <div class="o_kanban_record_headings">
+                                <strong class="o_kanban_record_title text-primary"><field name="name"/></strong>
                             </div>
                         </div>
+                        <div class="o_kanban_record_body small text-muted">
+                            <div><i class="fa fa-user me-1"/> Peneliti: <field name="student_id"/></div>
+                            <div><i class="fa fa-graduation-cap me-1"/> Jenjang: <field name="degree_level"/></div>
+                        </div>
+                        <footer class="mt-2 pt-2 border-top d-flex justify-content-between align-items-center">
+                            <span class="badge rounded-pill bg-light text-dark border">
+                                <i class="fa fa-robot me-1 text-info"/> <field name="execution_count"/> Sesi AI
+                            </span>
+                        </footer>
                     </t>
                 </templates>
             </kanban>
