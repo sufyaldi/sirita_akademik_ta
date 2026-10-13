@@ -112,3 +112,9 @@ class ThesisPromptExecution(models.Model):
             'state': 'executed'
         })
         return True
+
+    def action_mark_reviewed(self):
+        """Menandai sesi audit telah ditinjau dosen pembimbing"""
+        self.ensure_one()
+        self.write({'state': 'reviewed'})
+        return True

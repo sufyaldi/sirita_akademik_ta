@@ -23,7 +23,9 @@
         <field name="arch" type="xml">
             <form string="Audit Log Sesi AI">
                 <header>
-                    <button name="action_execute_ai" string="Jalankan AI via SIRITA AI Core" type="object" class="oe_highlight" invisible="state == 'executed'"/>
+                    <button name="action_execute_ai" string="Jalankan AI via SIRITA AI Core" type="object" class="oe_highlight" invisible="state != 'draft'"/>
+                    <button name="action_execute_ai" string="🔄 Regenerate / Jalankan Ulang AI" type="object" class="btn-secondary" invisible="state == 'draft'"/>
+                    <button name="action_mark_reviewed" string="✓ Tandai Telah Ditinjau Pembimbing" type="object" class="btn-outline-success" invisible="state != 'executed'"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,executed,reviewed"/>
                 </header>
                 <sheet>
@@ -44,14 +46,30 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="Prompt Terkompilasi">
-                            <field name="compiled_prompt" placeholder="Masukkan atau sesuaikan prompt lengkap di sini..." widget="text"/>
+                        <page string="💡 Rekomendasi &amp; Hasil Telaah AI" name="ai_response_tab">
+                            <div class="alert alert-info d-flex align-items-center mb-3" role="alert" invisible="not ai_response">
+                                <i class="fa fa-robot me-2 fs-4 text-primary"/>
+                                <div>
+                                    <strong>Rekomendasi Metodologis AI Terbimbing:</strong>
+                                    Gunakan telaah di bawah ini sebagai bahan pertimbangan kritis. Mahasiswa tetap memegang kendali intelektual penuh atas rancangan akhir.
+                                </div>
+                            </div>
+                            <div class="p-4 bg-view rounded border shadow-sm">
+                                <field name="ai_response" readonly="1"/>
+                            </div>
                         </page>
-                        <page string="Respons AI">
-                            <field name="ai_response" readonly="1"/>
+                        <page string="🎯 Parameter &amp; Prompt Terkompilasi" name="prompt_tab">
+                            <field name="compiled_prompt" placeholder="Masukkan atau sesuaikan prompt lengkap di sini..." widget="text" readonly="state != 'draft'"/>
                         </page>
-                        <page string="Refleksi Kritis Mahasiswa">
-                            <field name="student_reflection" placeholder="Tuliskan catatan evaluasi kritis Anda terhadap saran AI di atas (mengapa diterima/ditolak/dimodifikasi)..." widget="text"/>
+                        <page string="📝 Refleksi Kritis Mahasiswa" name="reflection_tab">
+                            <div class="alert alert-light border mb-2" role="status">
+                                <p class="mb-0 text-muted small">
+                                    <i class="fa fa-pencil me-1 text-primary"/>
+                                    <strong>Pedoman Integritas Ilmiah (Model Tiga Langkah):</strong>
+                                    Tuliskan evaluasi kritis Anda terhadap saran AI di atas: tentukan opsi yang dipilih, modifikasi yang dilakukan, serta alasan penyesuaian dengan konteks riil di Mahad Aly.
+                                </p>
+                            </div>
+                            <field name="student_reflection" placeholder="Tuliskan catatan evaluasi kritis Anda di sini..." widget="text"/>
                         </page>
                     </notebook>
                 </sheet>
