@@ -27,6 +27,9 @@ class ThesisPromptExecution(models.Model):
         index=True
     )
     prompt_code = fields.Char(related='prompt_id.code', string='Kode Prompt')
+    prompt_name = fields.Char(related='prompt_id.name', string='Nama Aktivitas')
+    appendix_source = fields.Selection(related='prompt_id.appendix_source', string='Tahapan Metodologi')
+    target_degree = fields.Selection(related='prompt_id.target_degree', string='Target Jenjang')
     name = fields.Char(
         string='Ringkasan Sesi',
         compute='_compute_name',

@@ -37,7 +37,27 @@
                             </group>
                         </page>
                         <page string="3. Pratinjau Prompt Baku &amp; Batasan Etik">
-                            <field name="preview_prompt" widget="text" readonly="1" placeholder="Pratinjau otomatis akan terisi saat parameter dimasukkan..."/>
+                            <div class="alert alert-secondary d-flex align-items-center mb-2" role="status">
+                                <i class="fa fa-info-circle me-2 text-primary fs-5"/>
+                                <small>
+                                    Pratinjau di bawah ini dirangkai otomatis dari isian parameter slot Anda. Anda dapat meneliti kesesuaian variabel sebelum dieksekusi bersama SIRITA AI.
+                                </small>
+                            </div>
+                            <div class="p-3 bg-light rounded border shadow-sm">
+                                <div class="d-flex justify-content-between align-items-center pb-2 mb-2 border-bottom">
+                                    <span class="badge bg-dark text-white font-monospace">
+                                        <i class="fa fa-code me-1 text-info"/>PAYLOAD PRATINJAU PROMPT
+                                    </span>
+                                    <span class="small text-muted">
+                                        <i class="fa fa-shield me-1 text-success"/>Filter Etika &amp; Integritas Aktif
+                                    </span>
+                                </div>
+                                <field name="preview_prompt"
+                                       widget="text"
+                                       class="font-monospace text-dark"
+                                       readonly="1"
+                                       placeholder="Pratinjau otomatis akan terisi saat parameter dimasukkan..."/>
+                            </div>
                         </page>
                     </notebook>
                 </sheet>

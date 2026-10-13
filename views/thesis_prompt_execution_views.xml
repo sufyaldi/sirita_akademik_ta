@@ -59,7 +59,42 @@
                             </div>
                         </page>
                         <page string="🎯 Parameter &amp; Prompt Terkompilasi" name="prompt_tab">
-                            <field name="compiled_prompt" placeholder="Masukkan atau sesuaikan prompt lengkap di sini..." widget="text" readonly="state != 'draft'"/>
+                            <div class="alert alert-secondary d-flex align-items-center mb-3" role="status">
+                                <i class="fa fa-terminal me-2 fs-4 text-primary"/>
+                                <div>
+                                    <strong>Instruksi Prompt Terkompilasi (Model Tiga Langkah):</strong>
+                                    Instruksi ini dirangkai secara deterministik dari isian slot parameter konteks riset mahasiswa dan panduan baku buku metodologi.
+                                </div>
+                            </div>
+                            <div class="row g-2 mb-3">
+                                <div class="col-md-6">
+                                    <div class="p-2 border rounded bg-light">
+                                        <small class="text-muted d-block fw-bold mb-1">Tahapan Metodologi Buku</small>
+                                        <field name="appendix_source" readonly="1"/>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="p-2 border rounded bg-light">
+                                        <small class="text-muted d-block fw-bold mb-1">Target Jenjang Studi</small>
+                                        <field name="target_degree" readonly="1"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 bg-light rounded border shadow-sm">
+                                <div class="d-flex justify-content-between align-items-center pb-2 mb-2 border-bottom">
+                                    <span class="badge bg-dark text-white font-monospace">
+                                        <i class="fa fa-code me-1 text-info"/>PAYLOAD PROMPT METODOLOGIS
+                                    </span>
+                                    <span class="small text-muted">
+                                        <i class="fa fa-lock me-1 text-success"/>Batasan Etik &amp; Integritas Aktif
+                                    </span>
+                                </div>
+                                <field name="compiled_prompt"
+                                       placeholder="Masukkan atau sesuaikan prompt lengkap di sini..."
+                                       widget="text"
+                                       class="font-monospace text-dark"
+                                       readonly="state != 'draft'"/>
+                            </div>
                         </page>
                         <page string="📝 Refleksi Kritis Mahasiswa" name="reflection_tab">
                             <div class="alert alert-light border mb-2" role="status">
